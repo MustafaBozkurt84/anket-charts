@@ -21,8 +21,8 @@ app = Flask(__name__)
 @app.route('/',methods=['GET', 'POST'])
 def index():
 
-    select_box = request.form.getlist("hidden_skills")
-    if len(select_box)==0:
+    select_box = request.form.getlist("skills")
+    if len(select_box[0])==0:
         select_box=sorular[0:9]
     my_dict = {"label": [], "AnketeKatılanSayı": [], "CevapYuzdesi": [],"soru":[],"chart":[],"chart_type":[]}
     num=len(select_box)
