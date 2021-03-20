@@ -108,7 +108,7 @@
       <div class="content">
         <div style="font-size;large;"> <!--     Sorular Select     ---------------------------------------------------------------------------------------------------------------------------------------------------------->
             <form action="/" method="post" id="multiple_select_form" style="font-size;large;">
-              <h2>Anket Seçin</h2>
+              <h3>Anket Seçin</h3>
      <select name="skills" id="skills" class="form-control selectpicker" style="font-size;large;" data-live-search="true" multiple autofocus size="10">
         {% for i in sorular %}
        <option value="{{i}}" style="font-size: large ;">{{i}}</option>
@@ -123,7 +123,7 @@
           <div class="col-12">
             <div class="card card-chart">
               <div class="card-body">
-                <div class="table-responsive"> <h3 style="color:rgba(255, 99, 132, 1);">Gösterilen Anketler</h3>
+                <div class="table-responsive"> <h4 style="color:rgba(255, 99, 132, 1);">Gösterilen Anketler</h4>
                   <table class="table tablesorter " id="">
                     <thead class=" text-primary">
                       <tr>
@@ -168,8 +168,8 @@
             <div class="card card-chart">
 
               <div class="card-header">
-                <h2 style="color:rgba(255, 99, 132, 1);">{{my_dict["soru"][i]  | safe}}
-               </h2>
+                <h4 style="color:rgba(255, 99, 132, 1);">{{my_dict["soru"][i]  | safe}}
+               </h4>
                 <h3 class="card-title"><i class="tim-icons icon-bank text-primary"></i> Ankete Katılan Sayı
               {{my_dict["AnketeKatılanSayı"][i]  | safe}}
                </h3>
@@ -230,7 +230,7 @@ var myChart4 = new Chart(ctx, {
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h2 style="color:rgba(255, 99, 132, 1);"> {{my_dict["soru"][i+1]  | safe}}</h2>
+                <h4 style="color:rgba(255, 99, 132, 1);"> {{my_dict["soru"][i+1]  | safe}}</h4>
                 <h3 class="card-title"><i class="tim-icons icon-coins text-info"></i>Ankete Katılan Sayı
               {{my_dict["AnketeKatılanSayı"][i+1]  | safe}} </h3>
               </div>
@@ -246,7 +246,7 @@ var myChart4 = new Chart(ctx, {
 
               ,
         datasets: [{
-            label: {{my_dict["label"][i]  | safe}},
+            label: {{my_dict["label"][i+1]  | safe}},
             data: {{my_dict["CevapYuzdesi"][i+1]  | safe}}
               ,
             backgroundColor: [
@@ -290,7 +290,7 @@ var myChart4 = new Chart(ctx, {
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h2 style="color:rgba(255, 99, 132, 1);">{{my_dict["soru"][i+2]  | safe}}</h2>
+                <h4 style="color:rgba(255, 99, 132, 1);">{{my_dict["soru"][i+2]  | safe}}</h4>
                 <h3 class="card-title"><i class="tim-icons icon-app text-success"></i> Ankete Katılan Sayı
               {{my_dict["AnketeKatılanSayı"][i+2]}}</h3>
               </div>
