@@ -108,7 +108,7 @@
       <div class="content">
         <div style="font-size;large;"> <!--     Sorular Select     ---------------------------------------------------------------------------------------------------------------------------------------------------------->
             <form action="/" method="post" id="multiple_select_form" style="font-size;large;">
-              <h3>Anket Seçin</h3>
+              <h3>Anket Seçin {{sorular}}</h3>
      <select name="skills" id="skills" class="form-control selectpicker" style="font-size;large;" data-live-search="true" multiple autofocus size="10">
         {% for soru in sorular %}
        <option value="{{soru}}" style="font-size: large ;">{{soru | safe}}</option>
