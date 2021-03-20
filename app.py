@@ -1,6 +1,6 @@
 # app.py
-from flask import Flask, render_template, request, jsonify
-from flask_mysqldb import MySQL, MySQLdb  # pip install flask-mysqldb https://github.com/alexferl/flask-mysqldb
+
+
 import pandas as pd
 import numpy as np
 from flask import Flask, flash, redirect, render_template, \
