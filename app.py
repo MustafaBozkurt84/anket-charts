@@ -9,7 +9,7 @@ from flask import Flask, flash, redirect, render_template, \
 
 
 df=pd.read_csv("AnketSonuclari01_20210303.csv")
-sorular=list(df["soru"].unique())
+
 
 
 
@@ -20,9 +20,9 @@ app = Flask(__name__)
 
 @app.route('/',methods=['GET', 'POST'])
 def index():
-
+    sorular = list(df["soru"].unique())
     select_box = request.form.getlist("skills")
-    if len(select_box[0])==0:
+    if len(select_box)==0:
         select_box=sorular[0:9]
     my_dict = {"label": [], "AnketeKatılanSayı": [], "CevapYuzdesi": [],"soru":[],"chart":[],"chart_type":[]}
     num=len(select_box)

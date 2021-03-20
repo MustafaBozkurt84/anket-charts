@@ -110,8 +110,8 @@
             <form action="/" method="post" id="multiple_select_form" style="font-size;large;">
               <h3>Anket Seçin</h3>
      <select name="skills" id="skills" class="form-control selectpicker" style="font-size;large;" data-live-search="true" multiple autofocus size="10">
-        {% for i in sorular %}
-       <option value="{{i}}" style="font-size: large ;">{{i}}</option>
+        {% for soru in sorular %}
+       <option value="{{soru}}" style="font-size: large ;">{{soru}}</option>
        {% endfor %}
 
      </select>
