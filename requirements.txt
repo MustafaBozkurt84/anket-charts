@@ -1,0 +1,13 @@
+pandas
+numpy
+flask
+mysql.connector
+gunicorn
+datetime
+
+
+
+
+
+
+
