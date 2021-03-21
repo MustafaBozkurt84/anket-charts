@@ -75,16 +75,14 @@ def index():
 
 @app.route('/login', methods=["POST","GET"])
 def login():
-    auth_dict = {"atilla": "yardimci","mustafa":"bozkurtt","analytic":"team"}
+    auth_dict = {"atilla": "yardimci","mustafa":"bozkurt","analytic":"team"}
     auth = request.authorization
-    try:
-        if auth and auth.password == auth_dict[auth.username]:
+    if auth and auth.password == auth_dict[auth.username]:
             token = jwt.encode({'user': auth.username,"password": auth.password, 'exp': datetime.datetime.utcnow() + datetime.timedelta(seconds=86400)},app.config['SECRET_KEY'])
             my_token = {'token': token.decode('UTF-8')}
             url=".?token="+my_token["token"]
             return redirect(".?token="+my_token["token"])
-    except:
-        pass
+
 
 
     return make_response('Could not verify!', 401, {'WWW-Authenticate' : 'Basic realm="Login Required"'})
