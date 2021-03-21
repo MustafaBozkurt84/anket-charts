@@ -4,7 +4,7 @@ flask
 mysql.connector
 gunicorn
 datetime
-
+pyjwt
 
 
 
