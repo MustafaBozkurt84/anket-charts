@@ -79,7 +79,7 @@ def login():
     auth = request.authorization
     if auth and auth.password == auth_dict[auth.username]:
             token = jwt.encode({'user': auth.username,"password": auth.password, 'exp': datetime.datetime.utcnow() + datetime.timedelta(seconds=15)},app.config['SECRET_KEY'])
-            my_token = {'token': token}
+            my_token = {'token': token.decode()}
 
             return redirect(".?token="+my_token["token"])
 
