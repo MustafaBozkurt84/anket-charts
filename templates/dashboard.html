@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="static/assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="static/assets/img/favicon.png">
     <link rel="stylesheet" href="static/assets/css/black-dashboard1.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" ></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
@@ -168,11 +168,11 @@
             <div class="card card-chart">
 
               <div class="card-header">
-                <h5 style="color:rgba(255, 99, 132, 1);">{{my_dict["soru"][i]  | safe}}
-               </h5>
-                <h4 class="card-title"><i class="tim-icons icon-bank text-primary"></i> Ankete Katılan Sayı
-              {{my_dict["AnketeKatılanSayı"][i]  | safe}}
+                <h4 style="color:rgba(255, 99, 132, 1);">{{my_dict["soru"][i]  | safe}}
                </h4>
+                <h3 class="card-title"><i class="tim-icons icon-bank text-primary"></i> Ankete Katılan Sayı
+              {{my_dict["AnketeKatılanSayı"][i]  | safe}}
+               </h3>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -230,9 +230,9 @@ var myChart4 = new Chart(ctx, {
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 style="color:rgba(255, 99, 132, 1);"> {{my_dict["soru"][i+1]  | safe}}</h5>
-                <h4 class="card-title"><i class="tim-icons icon-coins text-info"></i>Ankete Katılan Sayı
-              {{my_dict["AnketeKatılanSayı"][i+1]  | safe}} </h4>
+                <h4 style="color:rgba(255, 99, 132, 1);"> {{my_dict["soru"][i+1]  | safe}}</h4>
+                <h3 class="card-title"><i class="tim-icons icon-coins text-info"></i>Ankete Katılan Sayı
+              {{my_dict["AnketeKatılanSayı"][i+1]  | safe}} </h3>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -290,9 +290,9 @@ var myChart4 = new Chart(ctx, {
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 style="color:rgba(255, 99, 132, 1);">{{my_dict["soru"][i+2]  | safe}}</h5>
-                <h4 class="card-title"><i class="tim-icons icon-app text-success"></i> Ankete Katılan Sayı
-              {{my_dict["AnketeKatılanSayı"][i+2]}}</h4>
+                <h4 style="color:rgba(255, 99, 132, 1);">{{my_dict["soru"][i+2]  | safe}}</h4>
+                <h3 class="card-title"><i class="tim-icons icon-app text-success"></i> Ankete Katılan Sayı
+              {{my_dict["AnketeKatılanSayı"][i+2]}}</h3>
               </div>
               <div class="card-body">
                 <div class="chart-area">
