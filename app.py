@@ -78,8 +78,8 @@ def login():
     auth_dict = {"atilla": "yardimci","mustafa":"bozkurt","analytic":"team"}
     auth = request.authorization
     if auth and auth.password == auth_dict[auth.username]:
-            token = jwt.encode({'user': auth.username,"password": auth.password, 'exp': datetime.datetime.utcnow() + datetime.timedelta(seconds=15)},app.config['SECRET_KEY'])
-            my_token = {'token': token.decode()}
+            token = jwt.encode({'user': auth.username,"password": auth.password, 'exp': datetime.datetime.utcnow() + datetime.timedelta(seconds=86400)},app.config['SECRET_KEY'])
+            my_token = {'token': token.decode('utf-8')}
 
             return redirect(".?token="+my_token["token"])
 
