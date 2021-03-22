@@ -111,8 +111,8 @@
         <div style="font-size;large;">
           
            <!-- CARDS -->
-           <div class="row" >
-            <div >
+           <div  >
+            <div class="header ">
               <div class="container">
                 <h2 class="mb-5 text-white">Stats</h2>
                 <div class="header-body">
@@ -234,7 +234,7 @@
            
           <!--     Sorular Select     ---------------------------------------------------------------------------------------------------------------------------------------------------------->
             <form action={{url}} method="post" id="multiple_select_form" style="font-size;medium;">
-              <h3><br> Anket Seçin </h3>
+              <h3>Anket Seçin </h3>
      <select name="skills" id="skills" class="form-control selectpicker" style="font-size;medium;" data-live-search="true" multiple >
         {% for soru in sorular %}
        <option value="{{soru}}" style="font-size: medium ;">{{soru}}</option>
