@@ -44,6 +44,9 @@ def token_required(f):
 def index():
     token1 = request.args.get('token')
     url = ".?token=" + token1
+    anketsayisi=df["question"].max()
+    kisisayisi=df["countAnswer"].sum()
+    cevapsecenek=df["cevap"].value_counts().sum()
     sorular = list(df["soru"].unique())
     select_box = request.form.getlist("skills")
     if len(select_box)==0:
@@ -66,11 +69,14 @@ def index():
              my_dict["chart_type"].append('doughnut')
 
     return render_template(
-        'dashboard.html',
+        'dashboard1.html',
         sorular=sorular,
         select_box=select_box,
         my_dict=my_dict,
         num=num,
+        anketsayisi=anketsayisi,
+        kisisayisi=kisisayisi,
+        cevapsecenek=cevapsecenek,
          url=url)
 
 @app.route('/login', methods=["POST","GET"])

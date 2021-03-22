@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="static/assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="static/assets/img/favicon.png">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/assets/css/black-dashboard1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" ></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
   <title>
-    Northwind Data Dashboard 
+    Dashboards
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -47,7 +49,7 @@
         </div>
         <ul class="nav">
           <li class="active ">
-            <a href="./dashboard.html">
+            <a href={{URL}}>
               <i class="tim-icons icon-chart-pie-36"></i>
               <p>Dashboard</p>
             </a>
@@ -106,99 +108,334 @@
       <!-- End Navbar -->
 
       <div class="content">
-        <div style="font-size;large;"> <!--     Sorular Select     ---------------------------------------------------------------------------------------------------------------------------------------------------------->
-            <form action="/" method="post" id="multiple_select_form" style="font-size;large;">
-              Anket Seçin
-     <select name="skills" id="skills" class="form-control selectpicker" style="font-size;large;" data-live-search="true" multiple autofocus size="10">
-        {% for i in sorular %}
-       <option value="{{i}}" style="font-size: large ;">{{i}}</option>
-       {% endfor %}
+        <div style="font-size;large;">
+          
+           <!-- CARDS -->
+           <div class="main-content">
+            <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+              <div class="container-fluid">
+                <h2 class="mb-5 text-white">Stats</h2>
+                <div class="header-body">
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-6">
+                      <div class="card card-stats mb-4 mb-xl-0">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col">
+                              <h5 class="card-title text-uppercase text-info mb-0">Anket Sayısı</h5>
+                              <span class="h2 font-weight-bold  mb-0" style="color:bisque">{{anketsayisi | safe}}</span>
+                            </div>
+                            <div class="col-auto">
+                              <div class="icon icon-shape bg-danger text-white rounded-circle shadow" style="width: 3rem;
+                              height: 3rem; font-size: 2.25rem;display: inline-flex;
+  padding: 12px;
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center">
+                                <i class="fas fa-chart-bar"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="mt-3 mb-0 text-muted text-sm">
+                            <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 15.50%</span>
+                            <span class="text-nowrap">Since last month</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                      <div class="card card-stats mb-4 mb-xl-0">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col">
+                              <h5 class="card-title text-uppercase text-info mb-0">Ankete Katılan Kişi Sayısı</h5>
+                              <span class="h2 font-weight-bold mb-0"style="color:bisque">{{kisisayisi | safe}}</span>
+                            </div>
+                            <div class="col-auto">
+                              <div class="icon icon-shape bg-warning text-white rounded-circle shadow" style="width: 3rem;
+                              height: 3rem; font-size: 2.25rem;display: inline-flex;
+  padding: 12px;
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center">
+                                <i class="fas fa-chart-pie"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="mt-3 mb-0 text-muted text-sm">
+                            <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 3.48%</span>
+                            <span class="text-nowrap">Since last week</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                      <div class="card card-stats mb-4 mb-xl-0">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col">
+                              <h5 class="card-title text-uppercase text-info mb-0">Toplam Cevap Seçeneği </h5>
+                              <span class="h2 font-weight-bold mb-0"style="color:bisque">{{cevapsecenek | safe}}</span>
+                            </div>
+                            <div class="col-auto">
+                              <div class="icon icon-shape bg-yellow text-white rounded-circle shadow"style="width: 3rem;
+                              height: 3rem; font-size: 2.25rem;display: inline-flex;
+  padding: 12px;
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center">
+                                <i class="fas fa-percent"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="mt-3 mb-0 text-muted text-sm">
+                            <span class="text-warning mr-2"><i class="fas fa-arrow-up"></i> 3.12%</span>
+                            <span class="text-nowrap">Since yesterday</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                      <div class="card card-stats mb-4 mb-xl-0">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col">
+                              <h5 class="card-title text-uppercase text-info mb-0">Müşteri</h5>
+                              <span class="h2 font-weight-bold mb-0"style="color:bisque">6</span>
+                            </div>
+                            <div class="col-auto">
+                              <div class="icon icon-shape bg-info text-white rounded-circle shadow"style="width: 3rem;
+                              height: 3rem; font-size: 2.25rem;display: inline-flex;
+  padding: 12px;
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center">
+                                <i class="fas fa-users"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="mt-3 mb-0 text-muted text-sm">
+                            <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 20%</span>
+                            <span class="text-nowrap">Since last month</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Page content -->
+          </div>
+           
+          <!--     Sorular Select     ---------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <form action={{url}} method="post" id="multiple_select_form" style="font-size;medium;">
+              <h3>Anket Seçin </h3>
+     <select name="skills" id="skills" class="form-control selectpicker" style="font-size;medium;" data-live-search="true" multiple >
+        {% for soru in sorular %}
+       <option value="{{soru}}" style="font-size: medium ;">{{soru}}</option>
+        {% endfor %}
 
      </select>
      <br /><br />
      <input type="hidden" name="hidden_skills" id="hidden_skills" />
-     <input type="submit" name="submit" class="btn btn-info" value="Submit" />
+     <input type="submit" name="submit" class="btn btn-info" value="Grafik Oluştur" />
     </form></div>
         <div class="row">
           <div class="col-12">
             <div class="card card-chart">
-              {{my_dict  | safe}}
-              <div class="card-header ">
-                <div class="row">
-                  <div class="col-sm-6 text-left">
-                    <h5 class="card-category">Sales By Date</h5>
-                    <h2 class="card-title">Daily Sales</h2>
-                  </div>
-                  <div class="col-sm-6">
-                    
-                  </div>
-                </div>
-              </div>
               <div class="card-body">
-                <div class="chart-area">
-                  <canvas  id="chart33" width="300" height="50"></canvas><script>
-                    var ctx = document.getElementById('chart33').getContext('2d');
-                    var chartBig1 = new Chart(ctx, {
-                        type: 'line',
-                        data: {
-                            labels: {{ Shipped_Date | safe }},
-                            datasets: [{
-                                label: 'Sales By Date',
-                                data: {{ TotalSaless | safe }},
-                                backgroundColor: [
-                                    'rgba(255, 99, 132, 0.6)',
-                                    'rgba(54, 162, 235, 0.4)',
-                                    'rgba(255, 206, 86, 0.4)',
-                                    'rgba(75, 192, 192, 0.4)',
-                                    'rgba(153, 102, 255, 0.4)',
-                                    'rgba(255, 159, 64, 0.4)'
-                                ],
-                                borderColor: [
-                                    'rgba(0, 0, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)'
-                                ],
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            scales: {
-                                yAxes: [{
-                                    ticks: {
-                                        beginAtZero: true
-                                    }
-                                }]
-                            }
-                        }
-                    });
-                    </script>
+                <div class="table-responsive"> <h4 style="color:rgba(255, 99, 132, 1);">Gösterilen Anketler</h4>
+                  <table class="table tablesorter " id="">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>Anket Sorusu</th>
+                        <th>Ankete Katılan Kişi Sayısı</th>
+                        <th>Cevaplar </th>
+                        <th>Oran</th>
+
+                      </tr>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+
+
+                        {% for i in range(0,num) %}
+                        <tr>
+                        <td>{{my_dict["soru"][i]}} </td>
+                        <td>{{my_dict["AnketeKatılanSayı"][i]}}</td>
+                        <td>{{my_dict["label"][i]}}</td>
+                        <td>{{my_dict["CevapYuzdesi"][i]}}</td>
+                          </tr>
+
+
+                        {% endfor %}
+
+
+
+                    </tbody>
+                  </table>
                 </div>
               </div>
-            </div>
-          </div>
+            </div></div>
         </div>
+        
+        {% for i in range(0,num,3) %}
         <div class="row">
           <div class="col-lg-4">
+
+
+
             <div class="card card-chart">
+
               <div class="card-header">
-                <h5 class="card-category">Sales By Year </h5>
-                <h3 class="card-title"><i class="tim-icons icon-bank text-primary"></i> Total Sales {{TotalAllSales}} </h3>
+                <h4 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-success"></i>  {{my_dict["soru"][i]  | safe}}
+               </h4>
+                <h3 class="card-title"><i class="tim-icons icon-single-02 text-primary"></i> Ankete Katılan Sayı
+              {{my_dict["AnketeKatılanSayı"][i]  | safe}}
+               </h3>
               </div>
               <div class="card-body">
                 <div class="chart-area">
-                  <canvas id="myChart8" width="150" height="68"></canvas>
+                  <canvas id= "{{i}}" width="150" height="68"></canvas>
                    <script>
-var ctx = document.getElementById('myChart8').getContext('2d');
+var ctx = document.getElementById("{{i}}").getContext('2d');
 var myChart4 = new Chart(ctx, {
-    type: 'horizontalBar',
+    type: "{{my_dict["chart_type"][i]  | safe}}",
     data: {
-        labels: {{ Yearsales | safe }},
+        labels: {{my_dict["label"][i]  | safe}}
+
+              ,
         datasets: [{
-            label: 'Sales By Year',
-            data: {{ Yearsalestotal | safe }},
+            label: {{my_dict["label"][i]  | safe}},
+            data: {{my_dict["CevapYuzdesi"][i]  | safe}}
+              ,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.4)',
+                'rgba(54, 162, 235, 0.4)',
+                'rgba(255, 206, 86, 0.4)',
+                'rgba(75, 192, 192, 0.4)',
+                'rgba(153, 102, 255, 0.4)',
+                'rgba(255, 159, 64, 0.4)'
+
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(153, 102, 255, 0.8)',
+                'rgba(255, 159, 64, 0.8)'
+
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h4 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-primary"></i> {{my_dict["soru"][i+1]  | safe}} </h4>
+                <h3 class="card-title"><i class="tim-icons icon-single-02 text-info"></i>Ankete Katılan Sayı
+              {{my_dict["AnketeKatılanSayı"][i+1]  | safe}} </h3>
+              </div>
+              <div class="card-body">
+                <div class="chart-area">
+                  <canvas id= "{{i+1}}" width="150" height="68"></canvas>
+                   <script>
+var ctx = document.getElementById("{{i+1}}").getContext('2d');
+var myChart4 = new Chart(ctx, {
+    type: "{{my_dict["chart_type"][i+1]  | safe}}",
+    data: {
+        labels: {{my_dict["label"][i+1]  | safe}}
+
+              ,
+        datasets: [{
+            label: {{my_dict["label"][i+1]  | safe}},
+            data: {{my_dict["CevapYuzdesi"][i+1]  | safe}}
+              ,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.4)',
+                'rgba(54, 162, 235, 0.4)',
+                'rgba(255, 206, 86, 0.4)',
+                'rgba(75, 192, 192, 0.4)',
+                'rgba(153, 102, 255, 0.4)',
+                'rgba(255, 159, 64, 0.4)'
+
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(153, 102, 255, 0.8)',
+                'rgba(255, 159, 64, 0.8)'
+
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h4 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-info"></i> {{my_dict["soru"][i+2]  | safe}}</h4>
+                <h3 class="card-title"><i class="tim-icons icon-single-02 text-success"></i> Ankete Katılan Sayı
+              {{my_dict["AnketeKatılanSayı"][i+2]}}</h3>
+              </div>
+              <div class="card-body">
+                <div class="chart-area">
+                  <canvas id= "{{i+2}}" width="150" height="68"></canvas>
+                   <script>
+var ctx = document.getElementById("{{i+2}}").getContext('2d');
+var myChart4 = new Chart(ctx, {
+    type: "{{my_dict["chart_type"][i+2]  | safe}}",
+    data: {
+        labels: {{my_dict["label"][i+2]  | safe}}
+
+              ,
+        datasets: [{
+            label: {{my_dict["label"][i+2]  | safe}},
+            data: {{my_dict["CevapYuzdesi"][i+2]  | safe}}
+              ,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.4)',
                 'rgba(54, 162, 235, 0.4)',
@@ -235,536 +472,11 @@ var myChart4 = new Chart(ctx, {
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Sales By Months</h5>
-                <h3 class="card-title"><i class="tim-icons icon-coins text-info"></i>{{ThisMonth}} {{ ThisMonthTotalSales }}$ </h3>
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="myChart4" width="150" height="68"></canvas>
-              <script>
-var ctx = document.getElementById('myChart4').getContext('2d');
-var myChart4 = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: {{ MonthlysalesMonths | safe }},
-        datasets: [{
-            label: 'Sales By Monthly',
-            data: {{ Monthlysalestotal | safe }},
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.4)',
-                'rgba(54, 162, 235, 0.4)',
-                'rgba(255, 206, 86, 0.4)',
-                'rgba(75, 192, 192, 0.4)',
-                'rgba(153, 102, 255, 0.4)',
-                'rgba(255, 159, 64, 0.4)'
-
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 0.8)',
-                'rgba(153, 102, 255, 0.8)',
-                'rgba(255, 159, 64, 0.8)'
-
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Sales By Category</h5>
-                <h3 class="card-title"><i class="tim-icons icon-app text-success"></i> {{categorystop}} {{categoryssalestop}} $</h3>
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="myChart14" width="150" height="69" ></canvas>
-            <script>
-var ctx = document.getElementById('myChart14').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: {{ Catagory | safe }},
-        datasets: [{
-            label: 'Sales By Category',
-            data: {{ SalesCatagory | safe }},
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.4)',
-                'rgba(54, 162, 235, 0.4)',
-                'rgba(255, 206, 86, 0.4)',
-                'rgba(75, 192, 192, 0.4)',
-                'rgba(153, 102, 255, 0.4)',
-                'rgba(255, 159, 64, 0.4)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <!-- new added charts -->
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Sales By Cities</h5>
-                
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="myChart12" width="150" height="68"></canvas>
-    <script>
-    var ctx = document.getElementById('myChart12').getContext('2d');
-    var myChart12 = new Chart(ctx, {
-    type: 'radar',
-    data: {
-    labels: {{ cities | safe }},
-    datasets: [{
-    label: 'Sales By Cities',
-    data: {{ salesCitysales | safe }},
-    backgroundColor: [
-       'rgba(255, 99, 132, 0.4)',
-       'rgba(54, 162, 235, 0.4)',
-       'rgba(255, 206, 86, 0.4)',
-       'rgba(75, 192, 192, 0.4)',
-       'rgba(153, 102, 255, 0.4)',
-       'rgba(255, 159, 64, 0.4)',
-        'rgba(255, 99, 132, 0.4)',
-       'rgba(54, 162, 235, 0.4)',
-       'rgba(255, 206, 86, 0.4)',
-       'rgba(75, 192, 192, 0.4)',
-        'rgba(255, 99, 132, 0.4)',
-       'rgba(54, 162, 235, 0.4)',
-       'rgba(255, 206, 86, 0.4)',
-       'rgba(75, 192, 192, 0.4)',
+        {% endfor %}
 
-    ],
-    borderColor: [
-       'rgba(255, 99, 132, 1)',
-       'rgba(54, 162, 235, 1)',
-       'rgba(255, 206, 86, 1)',
-       'rgba(75, 192, 192, 1)',
-       'rgba(153, 102, 255, 1)',
-       'rgba(255, 159, 64, 1)'
-    ],
-    borderWidth: 1
-    }]
-    },
-    options: {
-    scales: false
-    }
-    });
-    </script>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Top 5 Products</h5>
-                
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="myChart2" width="150" height="68"></canvas>
 
-    <script>
-var ctx = document.getElementById('myChart2').getContext('2d');
-var myChart2 = new Chart(ctx, {
-type: 'pie',
-data: {
-labels: {{ Product_Name | safe }},
-datasets: [{
-   label: 'Top 5 Products',
-   data: {{ Total_Units_Sold | safe }},
-   backgroundColor: [
-       'rgba(255, 99, 132, 0.4)',
-       'rgba(54, 162, 235, 0.4)',
-       'rgba(255, 206, 86, 0.4)',
-       'rgba(75, 192, 192, 0.4)',
-       'rgba(153, 102, 255, 0.4)',
-       'rgba(255, 159, 64, 0.4)'
-   ],
-   borderColor: [
-       'rgba(255, 99, 132, 1)',
-       'rgba(54, 162, 235, 1)',
-       'rgba(255, 206, 86, 1)',
-       'rgba(75, 192, 192, 1)',
-       'rgba(153, 102, 255, 1)',
-       'rgba(255, 159, 64, 1)'
-   ],
-   borderWidth: 1
-}]
-},
-options: {
-scales: true
-}
-});
-</script>
 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Suppliers</h5>
-                
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="myChart10" width="150" height="68" ></canvas>
-
-    <script>
-var ctx = document.getElementById('myChart10').getContext('2d');
-var myChart10 = new Chart(ctx, {
-type: 'polarArea',
-data: {
-labels: {{ Suppliers | safe }},
-datasets: [{
-   label: 'Suppliers',
-   data: {{ salesbysuppliersale | safe }},
-   backgroundColor: [
-       'rgba(255, 99, 132, 0.4)',
-       'rgba(54, 162, 235, 0.4)',
-       'rgba(255, 206, 86, 0.4)',
-       'rgba(75, 192, 192, 0.4)',
-       'rgba(153, 102, 255, 0.4)',
-       'rgba(255, 159, 64, 0.4)'
-   ],
-   borderColor: [
-       'rgba(255, 99, 132, 1)',
-       'rgba(54, 162, 235, 1)',
-       'rgba(255, 206, 86, 1)',
-       'rgba(75, 192, 192, 1)',
-       'rgba(153, 102, 255, 1)',
-       'rgba(255, 159, 64, 1)'
-   ],
-   borderWidth: 1
-}]
-},
-options: {
-scales: false
-}
-});
-</script>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- new added charts -->
-         <!-- new added charts -->
-         <div class="row">
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Sales By Customers</h5>
-                
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="myChart"></canvas>
-            <script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: {{ Company | safe }},
-        datasets: [{
-            label: 'Sales By Customers',
-            data: {{ TotalSales | safe }},
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.4)',
-                'rgba(54, 162, 235, 0.4)',
-                'rgba(255, 206, 86, 0.4)',
-                'rgba(75, 192, 192, 0.4)',
-                'rgba(153, 102, 255, 0.4)',
-                'rgba(255, 159, 64, 0.4)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Shipping Company</h5>
-                
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="myChart13" width="150" height="68"></canvas>
-
-                  <script>
-                  var ctx = document.getElementById('myChart13').getContext('2d');
-                  var myChart12 = new Chart(ctx, {
-                  type: 'doughnut',
-                  data: {
-                  labels: {{ ShipperCompany | safe }},
-                  datasets: [{
-                  label: 'Shipper Company',
-                  data: {{ ShipperQuantity | safe }},
-                  backgroundColor: [
-                     'rgba(255, 99, 132, 0.4)',
-                     'rgba(54, 162, 235, 0.4)',
-                     'rgba(255, 206, 86, 0.4)',
-                     'rgba(75, 192, 192, 0.4)',
-                     'rgba(153, 102, 255, 0.4)',
-                     'rgba(255, 159, 64, 0.4)',
-                      'rgba(255, 99, 132, 0.4)',
-                     'rgba(54, 162, 235, 0.4)',
-                     'rgba(255, 206, 86, 0.4)',
-                     'rgba(75, 192, 192, 0.4)',
-                      'rgba(255, 99, 132, 0.4)',
-                     'rgba(54, 162, 235, 0.4)',
-                     'rgba(255, 206, 86, 0.4)',
-                     'rgba(75, 192, 192, 0.4)',
-              
-                  ],
-                  borderColor: [
-                     'rgba(255, 99, 132, 1)',
-                     'rgba(54, 162, 235, 1)',
-                     'rgba(255, 206, 86, 1)',
-                     'rgba(75, 192, 192, 1)',
-                     'rgba(153, 102, 255, 1)',
-                     'rgba(255, 159, 64, 1)'
-                  ],
-                  borderWidth: 1
-                  }]
-                  },
-                  options: {
-                  scales: true
-                  }
-                  });
-                  </script>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Suppliers</h5>
-                
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="myChart10" ></canvas>
-
-    <script>
-var ctx = document.getElementById('myChart10').getContext('2d');
-var myChart10 = new Chart(ctx, {
-type: 'polarArea',
-data: {
-labels: {{ Suppliers | safe }},
-datasets: [{
-   label: 'Suppliers',
-   data: {{ salesbysuppliersale | safe }},
-   backgroundColor: [
-       'rgba(255, 99, 132, 0.4)',
-       'rgba(54, 162, 235, 0.4)',
-       'rgba(255, 206, 86, 0.4)',
-       'rgba(75, 192, 192, 0.4)',
-       'rgba(153, 102, 255, 0.4)',
-       'rgba(255, 159, 64, 0.4)'
-   ],
-   borderColor: [
-       'rgba(255, 99, 132, 1)',
-       'rgba(54, 162, 235, 1)',
-       'rgba(255, 206, 86, 1)',
-       'rgba(75, 192, 192, 1)',
-       'rgba(153, 102, 255, 1)',
-       'rgba(255, 159, 64, 1)'
-   ],
-   borderWidth: 1
-}]
-},
-options: {
-scales: false
-}
-});
-</script>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- new added charts -->
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <div class="card ">
-              <div class="card-header">
-                <h4 class="card-title">Latest Orders</h4>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table tablesorter " id="">
-                    <thead class=" text-primary">
-                      <tr>
-                        <th>Order Date</th>
-                        <th>Product Name</th>
-                        <th>Quantity</th>
-                        <th>Unit Price</th>
-                        <th>Price</th>
-                        <th>Order Status</th>
-                      </tr>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      
-                      
-                      <tr>
-                        {% for i in LatestOrder0 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                      <tr>
-                        {% for i in LatestOrder1 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                      <tr>
-                        {% for i in LatestOrder2 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                      <tr>
-                        {% for i in LatestOrder3 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                      <tr>
-                        {% for i in LatestOrder4 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="card ">
-              <div class="card-header">
-                <h4 class="card-title"> Top 5 Employees</h4>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table tablesorter " id="">
-                    <thead class=" text-primary">
-                      <tr>
-                        <th>Employee Id</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Sales</th>
-                      </tr>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      
-                      <tr>
-                        {% for i in employee0 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                      <tr>
-                        {% for i in employee1 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                      <tr>
-                        {% for i in employee2 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                      <tr>
-                        {% for i in employee3 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                      <tr>
-                        {% for i in employee4 %}
-                        <td>{{i}}</td>
-                        {% endfor %}
-                        </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <footer class="footer">
         <div class="container-fluid">
           
