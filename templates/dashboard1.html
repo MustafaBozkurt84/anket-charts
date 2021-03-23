@@ -111,18 +111,18 @@
         <div style="font-size;large;">
           
            <!-- CARDS -->
-           <div style="padding: 0px; " >
-            <div class="header  pb-8 pt-5 pt-md-8" style="padding:0px; margin-bottom: 5px;">
-              <div class="container" style="margin: 0px;">
+           <div  >
+            <div class="header  pb-8 pt-5 pt-md-8" style=" margin-bottom: 5px;">
+              <div class="container" style="margin-bottom: 0px;">
                
-                <div class="header-body"style="padding: 0px;">
-                  <div class="row"style="padding: 0px;">
+                <div class="header-body">
+                  <div class="row">
                     <div class="col-xl-3 col-lg-6">
                       <div class="card card-stats mb-4 mb-xl-0">
                         <div class="card-body">
                           <div class="row">
                             <div class="col">
-                              <h5 class="card-title text-uppercase text-info mb-0">Anket Sayısı</h5>
+                              <h5 class="card-title text-uppercase text-info mb-0 " >Anket Sayısı</h5>
                               <span class="h2 font-weight-bold  mb-0" style="color:bisque">{{anketsayisi | safe}}</span>
                             </div>
                             <div class="col-auto">
@@ -233,9 +233,9 @@
           </div>
            
           <!--     Sorular Select     ---------------------------------------------------------------------------------------------------------------------------------------------------------->
-            <form action={{url}} method="post" id="multiple_select_form" style="font-size;medium;">
+            <form action={{url}} method="post" id="multiple_select_form" style="font-size;medium; " >
               <h3>Anket Seçin </h3>
-     <select name="skills" id="skills" class="form-control selectpicker" style="font-size;medium;" data-live-search="true" multiple >
+     <select name="skills" id="skills" class="form-control selectpicker" style="font-size;medium;margin-top: 0px;" data-live-search="true" multiple >
         {% for soru in sorular %}
        <option value="{{soru}}" style="font-size: medium ;">{{soru}}</option>
         {% endfor %}
