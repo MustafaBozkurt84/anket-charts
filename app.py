@@ -81,14 +81,23 @@ def index():
     data.sorular = list(df["soru"].unique())
     if request.method == 'POST':
         data.select_box = request.form.getlist("skills")
+        try:
+            if len(data.select_box) > 0:
+                pass
+            else:
+                pass
+        except:
+            data.select_box = request.form.getlist("skills")
+
+
+
+
     try:
-        if len(data.select_box) == 0:
-            data.select_box = data.sorular[0:9]
+        data.num = len(data.select_box)
     except:
         data.select_box = data.sorular[0:9]
-
-    data.my_dict = {"label": [], "AnketeKatılanSayı": [], "CevapYuzdesi": [],"soru":[],"chart":[],"chart_type":[]}
-    data.num = len(data.select_box)
+        data.num = len(data.select_box)
+    data.my_dict = {"label": [], "AnketeKatılanSayı": [], "CevapYuzdesi": [], "soru": [], "chart": [], "chart_type": []}
     for i in range(0,len(data.select_box)):
          data.my_dict["label"].append(list(df[df["soru"] == data.select_box[i]]["cevap"]))
          data.my_dict["AnketeKatılanSayı"].append( df[df["soru"] == data.select_box[i]]["countAnswer"].sum())
@@ -132,6 +141,7 @@ def index():
 @app.route(f"/<chartss>",methods=['GET', 'POST'])
 @token_required
 def chart(chartss):
+
     data.token1 = request.args.get('token')
     data.link_ = df[df["soru_"] == chartss]["soru"].value_counts().index[0]
 
