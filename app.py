@@ -40,6 +40,7 @@ class DataStore():
     soru  = None
     chart_type=None
     link_=None
+    select_box1=None
 
 
 
@@ -79,15 +80,18 @@ def index():
     data.kisisayisi = df["countAnswer"].sum()
     data.cevapsecenek = df["cevap"].value_counts().sum()
     data.sorular = list(df["soru"].unique())
-    if request.method == 'POST':
+
+    data.select_box1 = data.select_box
+    try:
+        if len(data.select_box) > 0:
+            if request.method == "POST":
+                data.select_box = request.form.getlist("skills")
+
+    except:
         data.select_box = request.form.getlist("skills")
-        try:
-            if len(data.select_box) > 0:
-                pass
-            else:
-                pass
-        except:
-            data.select_box = request.form.getlist("skills")
+    if  len(data.select_box) == 0:
+        data.select_box=data.select_box1
+
 
 
 
