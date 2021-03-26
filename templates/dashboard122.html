@@ -55,7 +55,7 @@
             Company Name
           </a>
         </div>
-        <ul class="nav">
+        <ul class="nav" autocomplete="off">
           <li class="active">
             <a href="{{url}}">
               <i class="tim-icons icon-chart-pie-36"></i>
@@ -63,12 +63,12 @@
             </a>
           </li>
               {%for i in select_box%}
-           <li>
+           <li autocomplete="off">
               
           
           <a class="menu" id="ankett" href={{i.replace(" ", "").replace("?", "").replace(":", "").replace(")", "").replace("(", "").replace(".", "").replace(",", "") | safe }}{{charts_url|safe}} >
             <i class="tim-icons icon-chart-bar-32"></i>
-            <span class= "menu" style="cursor:pointer;font-size: small">{{i}}</span>
+            <span class= "menu" style="cursor:pointer;font-size: small" autocomplete="off">{{i}}</span>
             
             
           </a>
