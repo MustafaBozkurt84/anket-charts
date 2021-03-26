@@ -41,6 +41,7 @@ class DataStore():
     chart_type=None
     link_=None
     select_box1=None
+    select=None
 
 
 
@@ -124,7 +125,7 @@ def index():
 
 
 
-
+    data.select=data.select_box
 
     return render_template(
         'dashboard1.html',
@@ -145,7 +146,7 @@ def index():
 @app.route(f"/<chartss>",methods=['GET', 'POST'])
 @token_required
 def chart(chartss):
-
+    data.select_box=data.select
     data.token1 = request.args.get('token')
     data.link_ = df[df["soru_"] == chartss]["soru"].value_counts().index[0]
 
