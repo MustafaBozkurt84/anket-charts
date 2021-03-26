@@ -250,58 +250,9 @@
 
            
           <!--     Sorular Select     ---------------------------------------------------------------------------------------------------------------------------------------------------------->
-            <form action={{url}} method="post" id="multiple_select_form" style="font-size;medium; " >
-              <h3>Anket Seçin </h3>
-     <select name="skills" id="skills" class="form-control selectpicker" style="font-size;medium;margin-top: 0px;" data-live-search="true" multiple >
-        {% for soru in sorular %}
-       <option value="{{soru}}" style="font-size: medium ;">{{soru}}</option>
-        {% endfor %}
+            </div>
+        <br><br><br><br><br>
 
-     </select>
-     <br /><br />
-     <input type="hidden" name="hidden_skills" id="hidden_skills" />
-     <input type="submit" name="submit" class="btn btn-info" value="Grafik Oluştur" />
-    </form></div>
-        <div class="row">
-          <div class="col-12">
-            <div class="card card-chart">
-              <div class="card-body">
-                <div class="table-responsive"> <h4 style="color:rgba(255, 99, 132, 1);">Gösterilen Anketler</h4>
-                  <table class="table tablesorter " id="">
-                    <thead class=" text-primary">
-                      <tr>
-                        <th>Anket Sorusu</th>
-                        <th>Ankete Katılan Kişi Sayısı</th>
-                        <th>Cevaplar </th>
-                        <th>Oran</th>
-
-                      </tr>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-
-
-
-                        {% for i in range(0,num) %}
-                        <tr>
-                        <td>{{my_dict["soru"][i]}} </td>
-                        <td>{{my_dict["AnketeKatılanSayı"][i]}}</td>
-                        <td>{{my_dict["label"][i]}}</td>
-                        <td>{{my_dict["CevapYuzdesi"][i]}}</td>
-                          </tr>
-
-
-                        {% endfor %}
-
-
-
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div></div>
-        </div>
         
 
 
