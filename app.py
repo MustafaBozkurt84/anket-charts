@@ -167,7 +167,7 @@ def chart(chartss):
     else:
         data.chart_type = 'doughnut'
 
-
+    data.select_box = data.select
     return render_template("dashboard122.html",
         sorular=data.sorular,
         select_box=data.select_box,
