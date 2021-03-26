@@ -146,6 +146,22 @@ def index():
 @app.route(f"/<chartss>",methods=['GET', 'POST'])
 @token_required
 def chart(chartss):
+    data.select_box1 = data.select_box
+    try:
+        if len(data.select_box) > 0:
+            if request.method == "POST":
+                data.select_box = request.form.getlist("skills")
+
+    except:
+        data.select_box = request.form.getlist("skills")
+    if len(data.select_box) == 0:
+        data.select_box = data.select_box1
+
+    try:
+        data.num = len(data.select_box)
+    except:
+        data.select_box = data.sorular[0:9]
+        data.num = len(data.select_box)
     data.select_box=data.select
     data.token1 = request.args.get('token')
     data.link_ = df[df["soru_"] == chartss]["soru"].value_counts().index[0]
