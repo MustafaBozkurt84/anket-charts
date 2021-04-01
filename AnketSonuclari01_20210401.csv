@@ -1,0 +1,398 @@
+question,soru,cevap,countAnswer,percentage
+1,Sana ne hatırlatmamı isterdin? :),Su İçme,303891,0.3945
+1,Sana ne hatırlatmamı isterdin? :),Uyku,80627,0.1047
+1,Sana ne hatırlatmamı isterdin? :),İlaç,50850,0.066
+1,Sana ne hatırlatmamı isterdin? :),Tampon-Ped Değiştirme,334930,0.4348
+2,Reglin düzenli mi?,Düzenli,206393,0.3832
+2,Reglin düzenli mi?,Düzensiz,332265,0.6168
+3,Yoğurttan tatlı olur mu?,Mükemmel olur!,136212,0.6208
+3,Yoğurttan tatlı olur mu?,Yok canım daha neler!,83218,0.3792
+4,"Çok tatlısın, güzelsin, şekerci mi baban senin?",A) Evet ?,217366,0.7412
+4,"Çok tatlısın, güzelsin, şekerci mi baban senin?",B) A,75883,0.2588
+5,Evcil hayvanın var mı? ? ?,Var :),120818,0.2227
+5,Evcil hayvanın var mı? ? ?,Yok :(,421641,0.7773
+6,Meme muayeneni ne sıklıkla yapıyorsun?,AYDA BİR,12595,0.064
+6,Meme muayeneni ne sıklıkla yapıyorsun?,3 AYDA BİR,2691,0.0137
+6,Meme muayeneni ne sıklıkla yapıyorsun?,6 AYDA BİR,25047,0.1273
+6,Meme muayeneni ne sıklıkla yapıyorsun?,AKLIMA GELDİKÇE,156378,0.795
+7,Aniden tatlı krizine girsen hangisini tercih edersin tatlım?,Ballı Bademli Dondurma,131473,0.3932
+7,Aniden tatlı krizine girsen hangisini tercih edersin tatlım?,Elmalı Turta,113905,0.3407
+7,Aniden tatlı krizine girsen hangisini tercih edersin tatlım?,Hindistan Cevizli Cupcake,88991,0.2661
+8,Senin favori Halley'in hangisi tatlım?,Halley Klasik,93703,0.7432
+8,Senin favori Halley'in hangisi tatlım?,Halley Karadutlu,32371,0.2568
+10,Hangi spor türünü yapıyorsun tatlım?,Pilates,23780,0.0873
+10,Hangi spor türünü yapıyorsun tatlım?,Yoga,7746,0.0284
+10,Hangi spor türünü yapıyorsun tatlım?,Fitness,28645,0.1052
+10,Hangi spor türünü yapıyorsun tatlım?,Diğer,35838,0.1316
+10,Hangi spor türünü yapıyorsun tatlım?,Yapmıyorum,176331,0.6475
+12,Sence 30 dakikada 500 kalori yakılır mı?,Evet,97617,0.5914
+12,Sence 30 dakikada 500 kalori yakılır mı?,Hayır,67440,0.4086
+14,Genellikle kendini nasıl hissediyorsun tatlım?,Yorgun,105281,0.872
+14,Genellikle kendini nasıl hissediyorsun tatlım?,Enerjik,15450,0.128
+15,Hangi operatörü kullanıyorsun bakalım?,Turkcell,22633,0.2617
+15,Hangi operatörü kullanıyorsun bakalım?,Vodafone,30897,0.3572
+15,Hangi operatörü kullanıyorsun bakalım?,Türk Telekom,29396,0.3399
+15,Hangi operatörü kullanıyorsun bakalım?,Diğer,3566,0.0412
+19,Senin favorin hangisi?,Sahilde kitap okumak,1117,0.2971
+19,Senin favorin hangisi?,Evde film izlemek,1286,0.342
+19,Senin favorin hangisi?,Arkadaşlarla sohbet etmek,1357,0.3609
+20,Doğum kontrol ilacı kullanıyor musun?,Evet,11435,0.0431
+20,Doğum kontrol ilacı kullanıyor musun?,Hayır,254123,0.9569
+21,Tıraş bıçağı kullanmanın en güzel özelliği nedir sence?,Acısız ve zahmetsiz olması,125833,0.6661
+21,Tıraş bıçağı kullanmanın en güzel özelliği nedir sence?,5 dakikada pürüzsüzlüğe kavuşma,63065,0.3339
+22,Her gün doğum haritana göre burç yorumları ve astro tavsiyeler almak ister misin?,Evet,114081,0.8021
+22,Her gün doğum haritana göre burç yorumları ve astro tavsiyeler almak ister misin?,Hayır,28145,0.1979
+23,Sen neden tıraş olmayı seçiyorsun?,"Pratik, zahmetsiz ve konforlu",124671,0.9299
+23,Sen neden tıraş olmayı seçiyorsun?,Tüyleri kalınlaştırmaz ve sertleştirmez,9395,0.0701
+24,"Her gün film, şarkı, kitap tavsiyeleri ve genel kültür bilgileri almak ister misin?",Evet,53697,0.7634
+24,"Her gün film, şarkı, kitap tavsiyeleri ve genel kültür bilgileri almak ister misin?",Hayır,16641,0.2366
+25,Hamilelikte gıda takviyesi kullanımı hakkında ne düşünüyorsun?,Kesinlikle gerekli!,15984,0.1465
+25,Hamilelikte gıda takviyesi kullanımı hakkında ne düşünüyorsun?,Pek bir fikrim yok.,46680,0.4278
+25,Hamilelikte gıda takviyesi kullanımı hakkında ne düşünüyorsun?,Doktor tavsiyesi dışında kullanmam.,27532,0.2523
+25,Hamilelikte gıda takviyesi kullanımı hakkında ne düşünüyorsun?,Meyve ve sebze tüketmeyi tercih ederim.,18924,0.1734
+26,Her gün en trend markalardan indirim fırsatları ve çok özel avantajlar ister misin?,Evet,10969,0.4515
+26,Her gün en trend markalardan indirim fırsatları ve çok özel avantajlar ister misin?,Hayır,13324,0.5485
+27,Bugün kendini nasıl hissediyorsun?,Enerjik,21395,0.1455
+27,Bugün kendini nasıl hissediyorsun?,Yorgun,125617,0.8545
+28,Regl günlerinde de sporuna devam ediyor musun?,Evet,17822,0.2129
+28,Regl günlerinde de sporuna devam ediyor musun?,Hayır,65882,0.7871
+29,"Sence ""egzama"" hakkında hangisi doğru?",İnternet ve TV'deki çözümleri denemek,169,0.0074
+29,"Sence ""egzama"" hakkında hangisi doğru?",Başkasının memnun kaldığı bir ilacı kullanmak,201,0.0088
+29,"Sence ""egzama"" hakkında hangisi doğru?",Bir doktora danışmak,19727,0.8651
+29,"Sence ""egzama"" hakkında hangisi doğru?",Doğal yolla tedavileri denemek,2707,0.1187
+30,Senin yerine kalori takibini yapacak bir asistan ister misin?,EVEET!,90588,0.7545
+30,Senin yerine kalori takibini yapacak bir asistan ister misin?,ÇOK İSTERİM!,29473,0.2455
+32,Onca regl takvimi arasından neden ben? ?,Seninle reglimi takip etmek çok keyifli.,673,0.8606
+32,Onca regl takvimi arasından neden ben? ?,Desteğin ve bilgin ile hamileliğe hazırlanıyorum.,109,0.1394
+33,Onca regl takvimi arasından neden ben? ?,Seninle reglimi takip etmek çok keyifli.,577904,0.8879
+33,Onca regl takvimi arasından neden ben? ?,Desteğin ve bilgin ile hamileliğe hazırlanıyorum.,72929,0.1121
+31,Hamile kalmak için aşağıdakilerden hangisinin çok önemli olduğunu düşünüyorsun?,Vücut sağlığının yerinde olması,149687,0.4223
+31,Hamile kalmak için aşağıdakilerden hangisinin çok önemli olduğunu düşünüyorsun?,Beslenme tarzının dengeli ve yeterli olması,72020,0.2032
+31,Hamile kalmak için aşağıdakilerden hangisinin çok önemli olduğunu düşünüyorsun?,Yaşam tarzının kaliteli olması,76903,0.217
+31,Hamile kalmak için aşağıdakilerden hangisinin çok önemli olduğunu düşünüyorsun?,Hekim tavsiyeleri,55859,0.1576
+34,Kimler bütün gün bilgisayarın başında ve boyun ağrısı çekiyor?,BEN!,51673,0.4916
+34,Kimler bütün gün bilgisayarın başında ve boyun ağrısı çekiyor?,BEEEEN!,53439,0.5084
+35,Sana da su içsen yarıyor mu?,"Evet, maalesef :(",242,0.6253
+35,Sana da su içsen yarıyor mu?,"Hayır, fit biriyimdir.",145,0.3747
+36,Sana da su içsen yarıyor mu?,"Evet, maalesef :(",100,0.6494
+36,Sana da su içsen yarıyor mu?,"Hayır, fit biriyimdir.",54,0.3506
+37,Sana da su içsen yarıyor mu?,"Evet, maalesef :(",96,0.64
+37,Sana da su içsen yarıyor mu?,"Hayır, fit biriyimdir.",54,0.36
+38,Sana da su içsen yarıyor mu?,"Evet, maalesef :(",122,0.6193
+38,Sana da su içsen yarıyor mu?,"Hayır, fit biriyimdir.",75,0.3807
+39,Sana da su içsen yarıyor mu?,"Evet, maalesef :(",3635,0.9945
+39,Sana da su içsen yarıyor mu?,"Hayır, fit biriyimdir.",20,0.0055
+40,Sana da su içsen yarıyor mu?,"Evet, maalesef :(",77880,0.6346
+40,Sana da su içsen yarıyor mu?,"Hayır, fit biriyimdir.",44838,0.3654
+41,Hangi pedi kullanıyorsun?,Kotex,26,0.4333
+41,Hangi pedi kullanıyorsun?,Sleepy,6,0.1
+41,Hangi pedi kullanıyorsun?,Molped,9,0.15
+41,Hangi pedi kullanıyorsun?,Orkid,16,0.2667
+41,Hangi pedi kullanıyorsun?,Diğer,3,0.05
+42,"Hareketli günlerde, ve hatta spor yaparken rahatlıkla kullanabileceğin Kotex Active’i denedin mi?",Hayır,7,0.7778
+42,"Hareketli günlerde, ve hatta spor yaparken rahatlıkla kullanabileceğin Kotex Active’i denedin mi?",evet,2,0.2222
+43,Hangi pedi kullanıyorsun?,Kotex,44771,0.354
+43,Hangi pedi kullanıyorsun?,Orkid,39503,0.3123
+43,Hangi pedi kullanıyorsun?,Molped,17359,0.1372
+43,Hangi pedi kullanıyorsun?,Sleepy,15273,0.1208
+43,Hangi pedi kullanıyorsun?,Diğer,9577,0.0757
+46,Sence hamile kalmak için aşağıdakilerden hangisi en önemlisi?,Vücut sağlığının yerinde olması,141,0.5529
+46,Sence hamile kalmak için aşağıdakilerden hangisi en önemlisi?,Beslenme tarzının dengeli ve yeterli olması,34,0.1333
+46,Sence hamile kalmak için aşağıdakilerden hangisi en önemlisi?,Yaşam tarzının kaliteli olması,52,0.2039
+46,Sence hamile kalmak için aşağıdakilerden hangisi en önemlisi?,Hekim tavsiyeleri,28,0.1098
+47,Sence hamile kalmak için aşağıdakilerden hangisi en önemlisi?,Vücut sağlığının yerinde olması,15823,0.5777
+47,Sence hamile kalmak için aşağıdakilerden hangisi en önemlisi?,Beslenme tarzının dengeli ve yeterli olması,3600,0.1314
+47,Sence hamile kalmak için aşağıdakilerden hangisi en önemlisi?,Yaşam tarzının kaliteli olması,4978,0.1817
+47,Sence hamile kalmak için aşağıdakilerden hangisi en önemlisi?,Hekim tavsiyeleri,2990,0.1092
+48,"Hareketli günlerde, ve hatta spor yaparken rahatlıkla kullanabileceğin Kotex Active’i denedin mi?",Hayır,4,1
+50,"Hareketli günlerde, ve hatta spor yaparken rahatlıkla kullanabileceğin Kotex Active’i denedin mi?","Evet, beğendim",30094,0.365
+50,"Hareketli günlerde, ve hatta spor yaparken rahatlıkla kullanabileceğin Kotex Active’i denedin mi?","Evet, beğenmedim",7269,0.0882
+50,"Hareketli günlerde, ve hatta spor yaparken rahatlıkla kullanabileceğin Kotex Active’i denedin mi?","Hayır, denemedim",45078,0.5468
+51,Onca regl takvimi arasından neden ben? ?,A,9,1
+52,Sence Türkiye’nin en uzun ve en geniş gece pedi hangisidir?,Kotex,47581,0.4611
+52,Sence Türkiye’nin en uzun ve en geniş gece pedi hangisidir?,Orkid,29811,0.2889
+52,Sence Türkiye’nin en uzun ve en geniş gece pedi hangisidir?,Molped,11283,0.1093
+52,Sence Türkiye’nin en uzun ve en geniş gece pedi hangisidir?,Sleepy,10602,0.1027
+52,Sence Türkiye’nin en uzun ve en geniş gece pedi hangisidir?,Diğer,3907,0.0379
+53,Hangi gece pedini kullanıyorsun?,Kotex,42672,0.3668
+53,Hangi gece pedini kullanıyorsun?,Orkid,36510,0.3138
+53,Hangi gece pedini kullanıyorsun?,Molped,15248,0.1311
+53,Hangi gece pedini kullanıyorsun?,Sleepy,13526,0.1163
+53,Hangi gece pedini kullanıyorsun?,Diğer,8381,0.072
+54,Hangi konuyla ilgili daha çok tavsiye vermemi istersin?,Astroloji ve burç yorumu,92058,0.4352
+54,Hangi konuyla ilgili daha çok tavsiye vermemi istersin?,Meditasyon,21852,0.1033
+54,Hangi konuyla ilgili daha çok tavsiye vermemi istersin?,Beslenme,38145,0.1803
+54,Hangi konuyla ilgili daha çok tavsiye vermemi istersin?,Fit Kalma,59454,0.2811
+55,Yaz ayları boyunca regl döneminde hangisini kullanmayı tercih ediyorsun?,Tampon,6376,0.0353
+55,Yaz ayları boyunca regl döneminde hangisini kullanmayı tercih ediyorsun?,Ped,174175,0.9647
+56,PepStore'un eğlenceli ve heyecanlı dünyasına katıldın mı tatlım?,"Eveeet, PepStore'da online'ım!",7156,0.3011
+56,PepStore'un eğlenceli ve heyecanlı dünyasına katıldın mı tatlım?,"Aaa, öyle bir şeyden haberim yok?",16609,0.6989
+57,She sembolü bir ped olsa markası ne olurdu?  ♀,Kotex,7,0.4118
+57,She sembolü bir ped olsa markası ne olurdu?  ♀,Molped,5,0.2941
+57,She sembolü bir ped olsa markası ne olurdu?  ♀,Sleepy,4,0.2353
+57,She sembolü bir ped olsa markası ne olurdu?  ♀,Diğer,1,0.0588
+58,"Dişilik sembolü ♀ bir ped olsa, markası ne olurdu sence?",Kotex,45089,0.4836
+58,"Dişilik sembolü ♀ bir ped olsa, markası ne olurdu sence?",Orkid,24969,0.2678
+58,"Dişilik sembolü ♀ bir ped olsa, markası ne olurdu sence?",Molped,10829,0.1162
+58,"Dişilik sembolü ♀ bir ped olsa, markası ne olurdu sence?",Sleepy,8145,0.0874
+58,"Dişilik sembolü ♀ bir ped olsa, markası ne olurdu sence?",Diğer,4196,0.045
+59,En sevdiğin renk hangisi,Kırmızı,1,0.0769
+59,En sevdiğin renk hangisi,Yeşil,3,0.2308
+59,En sevdiğin renk hangisi,Mavi,3,0.2308
+59,En sevdiğin renk hangisi,Sarı,2,0.1538
+59,En sevdiğin renk hangisi,Beyaz,1,0.0769
+59,En sevdiğin renk hangisi,Siyah,3,0.2308
+62,Arkadaşa ihtiyaç duyanların omzuna yaslandığı kişiyim.,Evet,54787,0.8135
+62,Arkadaşa ihtiyaç duyanların omzuna yaslandığı kişiyim.,Hayır,12563,0.1865
+63,Bir tartışmada hemen teslim olmayı reddederim.,Evet,30122,0.7363
+63,Bir tartışmada hemen teslim olmayı reddederim.,Hayır,10787,0.2637
+64,Bence iyi bir film tek başına izlenmeli.,Evet,20873,0.5594
+64,Bence iyi bir film tek başına izlenmeli.,Hayır,16437,0.4406
+65,Başkalarının benim hakkımda ne düşündüklerini pek önemsemem.,Evet,18013,0.5799
+65,Başkalarının benim hakkımda ne düşündüklerini pek önemsemem.,Hayır,13051,0.4201
+66,Son derece pratik bir insanımdır.,Evet.,17430,0.6911
+66,Son derece pratik bir insanımdır.,Hayır,7792,0.3089
+67,Belirsizlik bana heyecan veriyor.,Evet,5927,0.2661
+67,Belirsizlik bana heyecan veriyor.,Hayır,16343,0.7339
+68,Hayatın müthiş bir gizem olduğunu düşünüyorum,Evet,34145,0.6515
+68,Hayatın müthiş bir gizem olduğunu düşünüyorum,Hayır,18266,0.3485
+70,Seninle aramızdaki bir gizemi daha çözelim diyorum; eğitim durumun nedir?,Lise,62872,0.3037
+70,Seninle aramızdaki bir gizemi daha çözelim diyorum; eğitim durumun nedir?,Üniversite,119466,0.577
+70,Seninle aramızdaki bir gizemi daha çözelim diyorum; eğitim durumun nedir?,Master/PhD,6900,0.0333
+70,Seninle aramızdaki bir gizemi daha çözelim diyorum; eğitim durumun nedir?,Diger,17798,0.086
+71,Herkes için söylenebilecek güzel bir sözüm vardır.,Evet,18438,0.7553
+71,Herkes için söylenebilecek güzel bir sözüm vardır.,Hayır,5972,0.2447
+72,Oldukça hassas bir insanım.,Evet,35089,0.8719
+72,Oldukça hassas bir insanım.,Hayır,5157,0.1281
+73,Bana göre düzensiz olmak bir kusurdur.,Evet,127866,0.4611
+73,Bana göre düzensiz olmak bir kusurdur.,Hayır,149427,0.5389
+74,Dikkatim çok kolay dağılır.,Evet,135096,0.7459
+74,Dikkatim çok kolay dağılır.,Hayır,46030,0.2541
+76,Alışverişte en önemli kriterim şudur: Popüler ve prestijli markaları satın almak.,Evet,16968,0.1753
+76,Alışverişte en önemli kriterim şudur: Popüler ve prestijli markaları satın almak.,Hayır,79840,0.8247
+75,Moda ikonu olmak benim için önemli bir şey.,Evet,38413,0.3021
+75,Moda ikonu olmak benim için önemli bir şey.,Hayır,88737,0.6979
+77,Moda değiştikçe gardırobum da değişir.,Evet,23530,0.2942
+77,Moda değiştikçe gardırobum da değişir.,Hayır,56459,0.7058
+78,Benim için gerçekler her zaman duygulardan önemlidir.,Evet,46221,0.6875
+78,Benim için gerçekler her zaman duygulardan önemlidir.,Hayır,21013,0.3125
+79,Genellikle en düşük fiyatlı ürünleri tercih ederim.,Evet,10862,0.3926
+79,Genellikle en düşük fiyatlı ürünleri tercih ederim.,Hayır,16808,0.6074
+80,Stres altında bile çalışmaya devam edebilirim.,Evet,68076,0.439
+80,Stres altında bile çalışmaya devam edebilirim.,Hayır,86980,0.561
+81,"Bu arada çalışmak demişken, sen çalışıyor musun?",Ev hanımıyım,41093,0.1668
+81,"Bu arada çalışmak demişken, sen çalışıyor musun?",Çalışmıyorum / İş arıyorum,37505,0.1522
+81,"Bu arada çalışmak demişken, sen çalışıyor musun?",Ögrenciyim Lise,35418,0.1437
+81,"Bu arada çalışmak demişken, sen çalışıyor musun?",Ögrenciyim Üniversite,52562,0.2133
+81,"Bu arada çalışmak demişken, sen çalışıyor musun?",Çalışıyorum,79852,0.324
+82,"Bu arada çalışmak demişken, sen çalışıyor musun?",Çalışanım,54891,0.2912
+82,"Bu arada çalışmak demişken, sen çalışıyor musun?",Uzmanım,4885,0.0259
+82,"Bu arada çalışmak demişken, sen çalışıyor musun?",Yöneticiyim,3642,0.0193
+82,"Bu arada çalışmak demişken, sen çalışıyor musun?",Direktör/GMY/GM/Firma Sahibiyim,822,0.0044
+82,"Bu arada çalışmak demişken, sen çalışıyor musun?",Kendi işim var. (Esnaf/Sanatkar/Uzman Meslek),5786,0.0307
+82,"Bu arada çalışmak demişken, sen çalışıyor musun?",Çalışmıyorum,118441,0.6284
+83,Deodorant kullanıyor musun tatlım?,Evet,73025,0.8123
+83,Deodorant kullanıyor musun tatlım?,Hayır,16877,0.1877
+84,Satın almaya doyamadığım favori markalarım var.,Evet,26700,0.4372
+84,Satın almaya doyamadığım favori markalarım var.,Hayır,34372,0.5628
+86,"Piyango, loto, kazı kazan gibi şans oyunlarına mutlaka para ayırırım.",Evet,2597,0.0486
+86,"Piyango, loto, kazı kazan gibi şans oyunlarına mutlaka para ayırırım.",Hayır,50807,0.9514
+87,Her durumda soğukkanlı olan kazanır.,Evet,39015,0.7661
+87,Her durumda soğukkanlı olan kazanır.,Hayır,11909,0.2339
+88,Moda trendleri benden kaçmaz.,Evet,14361,0.3069
+88,Moda trendleri benden kaçmaz.,Hayır,32437,0.6931
+89,"Bir şeyler satın almayı önemsemem, aldığım şeyler üzerinde fazla düşünmem.",Evet,16256,0.3733
+89,"Bir şeyler satın almayı önemsemem, aldığım şeyler üzerinde fazla düşünmem.",Hayır,27296,0.6267
+90,"Hızlı alışveriş yapar, yeterince iyi bulduğum ilk şeyi hemen alırım.",Evet,61505,0.5565
+90,"Hızlı alışveriş yapar, yeterince iyi bulduğum ilk şeyi hemen alırım.",Hayır,49016,0.4435
+91,Bir ürün ne kadar pahalıysa o kadar kalitelidir.,Evet,8058,0.2022
+91,Bir ürün ne kadar pahalıysa o kadar kalitelidir.,Hayır,31786,0.7978
+92,Son sezon ürünlerden en az bir tane kıyafetim olur.,Evet,19114,0.4637
+92,Son sezon ürünlerden en az bir tane kıyafetim olur.,Hayır,22109,0.5363
+93,Bugün Nasılsın?,İyiyim,7,1
+94,Black Friday'de hangi kategorideki indirimler ve kampanyalar seni daha çok heyecanlandırır?,Giyim,37206,0.4662
+94,Black Friday'de hangi kategorideki indirimler ve kampanyalar seni daha çok heyecanlandırır?,Teknoloji,9655,0.121
+94,Black Friday'de hangi kategorideki indirimler ve kampanyalar seni daha çok heyecanlandırır?,Lüks markalar,5312,0.0666
+94,Black Friday'de hangi kategorideki indirimler ve kampanyalar seni daha çok heyecanlandırır?,Ayakkabı,16351,0.2049
+94,Black Friday'de hangi kategorideki indirimler ve kampanyalar seni daha çok heyecanlandırır?,Aksesuar,11278,0.1413
+95,"Kelebek bir günlük ped olsa, markası ne olurdu sence?",Kotex,24545,0.5038
+95,"Kelebek bir günlük ped olsa, markası ne olurdu sence?",Orkid,12173,0.2499
+95,"Kelebek bir günlük ped olsa, markası ne olurdu sence?",Molped,7367,0.1512
+95,"Kelebek bir günlük ped olsa, markası ne olurdu sence?",Diğer,4633,0.0951
+96,"Tüm regl dönemini tek bir ped ile geçirecek olsan, aşağıdakilerden hangisini seçerdin?",Günlük Pedler,5681,0.0534
+96,"Tüm regl dönemini tek bir ped ile geçirecek olsan, aşağıdakilerden hangisini seçerdin?",Normal Ped,21201,0.1993
+96,"Tüm regl dönemini tek bir ped ile geçirecek olsan, aşağıdakilerden hangisini seçerdin?",Uzun Ped,29739,0.2796
+96,"Tüm regl dönemini tek bir ped ile geçirecek olsan, aşağıdakilerden hangisini seçerdin?",Gece Pedi,49754,0.4677
+97,Hangi konularla ilgili daha çok tavsiye vermemi istersin?,Astroloji,100231,0.2017
+97,Hangi konularla ilgili daha çok tavsiye vermemi istersin?,Kahve Falı,67397,0.1356
+97,Hangi konularla ilgili daha çok tavsiye vermemi istersin?,Nefes Egzersizi,57653,0.116
+97,Hangi konularla ilgili daha çok tavsiye vermemi istersin?,Yoga,40884,0.0823
+97,Hangi konularla ilgili daha çok tavsiye vermemi istersin?,Meditasyon,61263,0.1233
+97,Hangi konularla ilgili daha çok tavsiye vermemi istersin?,Fitness,58115,0.117
+97,Hangi konularla ilgili daha çok tavsiye vermemi istersin?,Sağlıklı Beslenme,111310,0.224
+98,Aşağıdaki ped markalarından hangisinin tasarımını daha çok beğeniyorsun?,Kotex,77055,0.4421
+98,Aşağıdaki ped markalarından hangisinin tasarımını daha çok beğeniyorsun?,Orkid,52163,0.2993
+98,Aşağıdaki ped markalarından hangisinin tasarımını daha çok beğeniyorsun?,Molped,28958,0.1661
+98,Aşağıdaki ped markalarından hangisinin tasarımını daha çok beğeniyorsun?,Diğer,16120,0.0925
+99,İyi bir gün geceden başlar. Regl döneminde kesintisiz bir gece uykusu için en yakın arkadaşın kim olurdu?,Regl Gece Külodu,11713,0.1151
+99,İyi bir gün geceden başlar. Regl döneminde kesintisiz bir gece uykusu için en yakın arkadaşın kim olurdu?,Bariyerli Gece Pedi,13219,0.1299
+99,İyi bir gün geceden başlar. Regl döneminde kesintisiz bir gece uykusu için en yakın arkadaşın kim olurdu?,Ultra Gece Pedi,49930,0.4907
+99,İyi bir gün geceden başlar. Regl döneminde kesintisiz bir gece uykusu için en yakın arkadaşın kim olurdu?,Sıcak Su Torbası,26883,0.2642
+100,Sağlığın için bu çok önemli: Düzenli hareket ediyor musun tatlım?,Evet!,51877,0.4321
+100,Sağlığın için bu çok önemli: Düzenli hareket ediyor musun tatlım?,Hayır,68191,0.5679
+101,Spor yapmaya üşenip evde neler yapabilirim diyenlerden misin?,Evet,115665,0.7433
+101,Spor yapmaya üşenip evde neler yapabilirim diyenlerden misin?,Hayır,39939,0.2567
+102,Hijyenik ped seçimini en çok hangisi etkiliyor? (Bu soruya birden fazla cevap verebilirsin.),%100 doğal materyal olması,18775,0.1586
+102,Hijyenik ped seçimini en çok hangisi etkiliyor? (Bu soruya birden fazla cevap verebilirsin.),Sızdırmaması,36410,0.3076
+102,Hijyenik ped seçimini en çok hangisi etkiliyor? (Bu soruya birden fazla cevap verebilirsin.),Uzunluğu,25813,0.2181
+102,Hijyenik ped seçimini en çok hangisi etkiliyor? (Bu soruya birden fazla cevap verebilirsin.),Fiyatı,14885,0.1258
+102,Hijyenik ped seçimini en çok hangisi etkiliyor? (Bu soruya birden fazla cevap verebilirsin.),Hangi marka olduğu,19119,0.1615
+102,Hijyenik ped seçimini en çok hangisi etkiliyor? (Bu soruya birden fazla cevap verebilirsin.),Diğer,3367,0.0284
+103,Regl döneminde huzursuz uyurum çünkü...,Pedimin sızdırmasından korkarım.,42383,0.4714
+103,Regl döneminde huzursuz uyurum çünkü...,Hiçbir ped güvenebileceğim kadar uzun değil.,6042,0.0672
+103,Regl döneminde huzursuz uyurum çünkü...,Kullandığım ped beni rahatsız hissettirir.,9882,0.1099
+103,Regl döneminde huzursuz uyurum çünkü...,"Yoo, aslında regl döneminde huzurlu uyuyorum.",31597,0.3515
+104,Regl dönemlerinde geceleri rahat uyumak için hangisi ilk tercihin olur?,Kotex Ultra Gece,60967,0.6722
+104,Regl dönemlerinde geceleri rahat uyumak için hangisi ilk tercihin olur?,Kotex Gece Külodu,10113,0.1115
+104,Regl dönemlerinde geceleri rahat uyumak için hangisi ilk tercihin olur?,Kotex Ultra Uzun,19619,0.2163
+105,"Tatlım, gün içinde telefonuna gönderdiğim bildirimler hakkındaki fikrini benimle paylaşır mısın?",Çok seviyorum. Günümü güzelleştiriyor! ?,80272,0.8346
+105,"Tatlım, gün içinde telefonuna gönderdiğim bildirimler hakkındaki fikrini benimle paylaşır mısın?",Güzel ama belki biraz daha az bildirim gönderebilirsin. ?,8877,0.0923
+105,"Tatlım, gün içinde telefonuna gönderdiğim bildirimler hakkındaki fikrini benimle paylaşır mısın?",Göndermeni istemiyorum çünkü bu bildirimler bana göre değil. ?,1981,0.0206
+105,"Tatlım, gün içinde telefonuna gönderdiğim bildirimler hakkındaki fikrini benimle paylaşır mısın?",Gönderdiğin bildirimlerin farkında bile değilim. ?,5047,0.0525
+106,Doğum kontrol hapını hangi amaçla kullanıyorsun? (Birden fazla şık seçebilirsin.),Doğum kontrolü için,6758,0.0503
+106,Doğum kontrol hapını hangi amaçla kullanıyorsun? (Birden fazla şık seçebilirsin.),Şiddetli regl kanaması için,2307,0.0172
+106,Doğum kontrol hapını hangi amaçla kullanıyorsun? (Birden fazla şık seçebilirsin.),Regl ağrılarım için,4219,0.0314
+106,Doğum kontrol hapını hangi amaçla kullanıyorsun? (Birden fazla şık seçebilirsin.),PKOS için,2936,0.0219
+106,Doğum kontrol hapını hangi amaçla kullanıyorsun? (Birden fazla şık seçebilirsin.),Sivilce problemim için,2382,0.0177
+106,Doğum kontrol hapını hangi amaçla kullanıyorsun? (Birden fazla şık seçebilirsin.),Regl öncesi gerginlik sendromu için,2128,0.0158
+106,Doğum kontrol hapını hangi amaçla kullanıyorsun? (Birden fazla şık seçebilirsin.),Diğer,3998,0.0298
+106,Doğum kontrol hapını hangi amaçla kullanıyorsun? (Birden fazla şık seçebilirsin.),Doğum kontrol hapı kullanmıyorum,109581,0.8159
+107,"Çevrendeki insanlara Pepapp’ı tavsiye eder misin? 1’den 5’e sevgi yükseliyor, seç birini bakalım!","5: Evet, kesinlikle tavsiye ederim!",112943,0.6747
+107,"Çevrendeki insanlara Pepapp’ı tavsiye eder misin? 1’den 5’e sevgi yükseliyor, seç birini bakalım!",4: Tavsiye ederim…,41532,0.2481
+107,"Çevrendeki insanlara Pepapp’ı tavsiye eder misin? 1’den 5’e sevgi yükseliyor, seç birini bakalım!","3: Emin değilim, bilemedim.",9582,0.0572
+107,"Çevrendeki insanlara Pepapp’ı tavsiye eder misin? 1’den 5’e sevgi yükseliyor, seç birini bakalım!",2: Tavsiye etmem herhalde ya…,1825,0.0109
+107,"Çevrendeki insanlara Pepapp’ı tavsiye eder misin? 1’den 5’e sevgi yükseliyor, seç birini bakalım!",1: Kesinlikle tavsiye etmem! O ne öyle!,1522,0.0091
+108,"Konu doğallık olunca, hangisine daha yakın hissediyorsun?",Orkid,9841,0.2329
+108,"Konu doğallık olunca, hangisine daha yakın hissediyorsun?",Kotex,20858,0.4937
+108,"Konu doğallık olunca, hangisine daha yakın hissediyorsun?",Molped,5746,0.136
+108,"Konu doğallık olunca, hangisine daha yakın hissediyorsun?",Sleepy,5803,0.1374
+109,Aşağıdakilerden hangisi senin beslenme biçimini tanımlar?,Vegan: Hayvansal gıda tüketmiyorum.,2319,0.0154
+109,Aşağıdakilerden hangisi senin beslenme biçimini tanımlar?,Yarı Vejetaryen: Hayvansal gıdalardan yalnızca et ve et ürünlerini tüketmiyorum.,6850,0.0455
+109,Aşağıdakilerden hangisi senin beslenme biçimini tanımlar?,Lakto-Vejetaryen: Hayvansal gıdalardan yalnızca süt ve süt ürünlerini tüketiyorum.,1936,0.0129
+109,Aşağıdakilerden hangisi senin beslenme biçimini tanımlar?,"Lakto-ovo-Vejetaryen: Yalnızca süt, süt ürünleri ve yumurta tüketiyorum.",1819,0.0121
+109,Aşağıdakilerden hangisi senin beslenme biçimini tanımlar?,"Pesko Vejeteryen: Et ve tavuk ürünlerini yemem. Balık, süt ürünleri ve yumurta yiyorum.",3136,0.0208
+109,Aşağıdakilerden hangisi senin beslenme biçimini tanımlar?,"Omnivor: Belirli bir kurala bağlı kalmadan, tamamen kendi inisiyatifime göre hayvansal gıda tüketmiyorum.",11292,0.075
+109,Aşağıdakilerden hangisi senin beslenme biçimini tanımlar?,Fruiyarianlar: Meyve ile besleniyorum.,764,0.0051
+109,Aşağıdakilerden hangisi senin beslenme biçimini tanımlar?,Hiçbiri,122530,0.8134
+110,Evde kaç kişi yaşıyorsunuz?,1,1027,0.0317
+110,Evde kaç kişi yaşıyorsunuz?,2,7320,0.226
+110,Evde kaç kişi yaşıyorsunuz?,3,6291,0.1943
+110,Evde kaç kişi yaşıyorsunuz?,4,8970,0.277
+110,Evde kaç kişi yaşıyorsunuz?,5 ve üstü,8776,0.271
+111,Evindeki bireyleri hangisi daha doğru ifade ediyor?,Yalnız yaşıyorum.,3449,0.0929
+111,Evindeki bireyleri hangisi daha doğru ifade ediyor?,Arkadaş grubuyuz.,1067,0.0287
+111,Evindeki bireyleri hangisi daha doğru ifade ediyor?,Genç çiftiz.,7775,0.2093
+111,Evindeki bireyleri hangisi daha doğru ifade ediyor?,Genç çiftiz ve bebeğimiz var.,3222,0.0867
+111,Evindeki bireyleri hangisi daha doğru ifade ediyor?,Orta yaşlı çiftiz.,1096,0.0295
+111,Evindeki bireyleri hangisi daha doğru ifade ediyor?,Orta yaşlı çift ve çocuklar/gençler var.,13047,0.3513
+111,Evindeki bireyleri hangisi daha doğru ifade ediyor?,Aile büyüklerinin de olduğu kalabalık bir aileyiz (üç nesil).,7487,0.2016
+112,Cilt tipin için hangisini söyleyebilirsin?,Karma,18855,0.4641
+112,Cilt tipin için hangisini söyleyebilirsin?,Kuru,7509,0.1848
+112,Cilt tipin için hangisini söyleyebilirsin?,Normal,5846,0.1439
+112,Cilt tipin için hangisini söyleyebilirsin?,Yağlı,7965,0.196
+112,Cilt tipin için hangisini söyleyebilirsin?,Diğer,454,0.0112
+113,Ailenin aylık ortalama geliri nedir?,2.000 TL altı,11043,0.1947
+113,Ailenin aylık ortalama geliri nedir?,2.000 TL - 2.999 TL,12979,0.2289
+113,Ailenin aylık ortalama geliri nedir?,3.000 TL - 4.999 TL,13993,0.2467
+113,Ailenin aylık ortalama geliri nedir?,5.000 TL - 6.999 TL,8853,0.1561
+113,Ailenin aylık ortalama geliri nedir?,7.000 TL - 9.999 TL,5609,0.0989
+113,Ailenin aylık ortalama geliri nedir?,10.000 TL - 19.999 TL,2855,0.0503
+113,Ailenin aylık ortalama geliri nedir?,20.000 TL ve üstü,1380,0.0243
+114,Bireysel ihtiyaçların için aylık ortalama ne kadar harcıyorsun?,200 TL altı,44846,0.5026
+114,Bireysel ihtiyaçların için aylık ortalama ne kadar harcıyorsun?,200 TL - 499 TL,24827,0.2783
+114,Bireysel ihtiyaçların için aylık ortalama ne kadar harcıyorsun?,500 TL – 999 TL,10678,0.1197
+114,Bireysel ihtiyaçların için aylık ortalama ne kadar harcıyorsun?,1.000 TL – 1.999 TL,4943,0.0554
+114,Bireysel ihtiyaçların için aylık ortalama ne kadar harcıyorsun?,2.000 TL - 2.999 TL,1969,0.0221
+114,Bireysel ihtiyaçların için aylık ortalama ne kadar harcıyorsun?,3.000 TL - 4.999 TL,833,0.0093
+114,Bireysel ihtiyaçların için aylık ortalama ne kadar harcıyorsun?,5.000 TL ve üstü,1127,0.0126
+115,Pahalı ama çok beğendiğin bir ürün almak istediğinde hangi durum seni en iyi yansıtıyor?,"Gelirim/harçlığım genellikle yeterli, çok beğenirsem alırım.",37167,0.2304
+115,Pahalı ama çok beğendiğin bir ürün almak istediğinde hangi durum seni en iyi yansıtıyor?,Sevdiklerim sayesinde ilk doğum günümde aldırırım.,7188,0.0446
+115,Pahalı ama çok beğendiğin bir ürün almak istediğinde hangi durum seni en iyi yansıtıyor?,Her zaman yedekte param var ve gerekirse kullanırım.,27022,0.1675
+115,Pahalı ama çok beğendiğin bir ürün almak istediğinde hangi durum seni en iyi yansıtıyor?,Sanırım biraz daha beklemem gerekir.,89909,0.5575
+116,Son zamanlarda hangi hijyenik ped markasını kadınların her alanda yanında hissediyorsun?,Orkid,29341,0.2807
+116,Son zamanlarda hangi hijyenik ped markasını kadınların her alanda yanında hissediyorsun?,Kotex,41445,0.3966
+116,Son zamanlarda hangi hijyenik ped markasını kadınların her alanda yanında hissediyorsun?,Molped,16035,0.1534
+116,Son zamanlarda hangi hijyenik ped markasını kadınların her alanda yanında hissediyorsun?,Sleepy,11187,0.107
+116,Son zamanlarda hangi hijyenik ped markasını kadınların her alanda yanında hissediyorsun?,Diğer,6504,0.0622
+117,Hamileliğini planlarken Folik Asit takviyesi kullanmış mıydın?,"Evet, planlıydı ve folik asit kullandım.",15538,0.1138
+117,Hamileliğini planlarken Folik Asit takviyesi kullanmış mıydın?,"Hayır, planlıydı ama folik asit kullanmadım.",7475,0.0547
+117,Hamileliğini planlarken Folik Asit takviyesi kullanmış mıydın?,"Hamileliğim plansız oldu, dolayısı ile folik asit kullanmadım.",5860,0.0429
+117,Hamileliğini planlarken Folik Asit takviyesi kullanmış mıydın?,Hamile değilim.,107694,0.7886
+118,Çocuğun var mı?,Yok.,10104,0.8697
+118,Çocuğun var mı?,1 çocuğum var.,972,0.0837
+118,Çocuğun var mı?,2 çocuğum var.,437,0.0376
+118,Çocuğun var mı?,2’den fazla çocuğum var.,105,0.009
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Ağda ve tüy dökücüler,5086,0.0719
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Ağız bakımı ürünleri,7073,0.1
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Deodorant,7346,0.1038
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Dudak bakımı ürünleri,5150,0.0728
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Duş ve banyo ürünleri,7985,0.1128
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),El & ayak bakımı ürünleri,4344,0.0614
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Göz makyajı & bakımı ürünleri,4683,0.0662
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Güneş kremi,3085,0.0436
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Makyaj malzemeleri,5130,0.0725
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Parfüm,7196,0.1017
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Tıraş malzemeleri,1709,0.0242
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Vücut bakımı ürünleri,4278,0.0605
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Yüz bakımı ürünleri,6704,0.0947
+119,Aşağıdaki bakım ürünlerinden hangilerini düzenli olarak kullanıyorsun? (Bu soruya birden fazla cevap verebilirsin.),Diğer,992,0.014
+120,Kozmetik ürün satın alırken hangisine dikkat ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Dermatolojik olmasına,7213,0.1885
+120,Kozmetik ürün satın alırken hangisine dikkat ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Doğal içerikli olmasına,8004,0.2092
+120,Kozmetik ürün satın alırken hangisine dikkat ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Hayvanlar üzerinde test edilmemiş olmasına,3625,0.0947
+120,Kozmetik ürün satın alırken hangisine dikkat ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),İndirimde olmasına,7333,0.1916
+120,Kozmetik ürün satın alırken hangisine dikkat ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Lüks olmasına,1103,0.0288
+120,Kozmetik ürün satın alırken hangisine dikkat ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Uygun fiyatlı olmasına,7848,0.2051
+120,Kozmetik ürün satın alırken hangisine dikkat ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Vegan olmasına,1100,0.0287
+120,Kozmetik ürün satın alırken hangisine dikkat ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Hiçbiri,849,0.0222
+120,Kozmetik ürün satın alırken hangisine dikkat ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Diğer,1191,0.0311
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Kuru,4219,0.0722
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Normal,6693,0.1145
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Yağlı,6657,0.1139
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Dalgalı,8375,0.1433
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Düz,5491,0.0939
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Kıvırcık,2764,0.0473
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Yıpranmış,4932,0.0844
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Boyalı,5051,0.0864
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),İnce telli,8713,0.1491
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Kalın telli,5047,0.0863
+121,Saç tipini en iyi hangisi/ hangileri ifade ediyor? ((Bu soruya birden fazla cevap verebilirsin.),Diğer,507,0.0087
+122,Aşağıdakilerden hangilerinin lüks olanlarını tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Otomotiv,4757,0.1289
+122,Aşağıdakilerden hangilerinin lüks olanlarını tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Cep telefonu,7646,0.2072
+122,Aşağıdakilerden hangilerinin lüks olanlarını tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Restoranlar,3182,0.0862
+122,Aşağıdakilerden hangilerinin lüks olanlarını tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Saat/Aksesuar/Parfüm vb.,5500,0.149
+122,Aşağıdakilerden hangilerinin lüks olanlarını tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Kıyafet,5598,0.1517
+122,Aşağıdakilerden hangilerinin lüks olanlarını tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Diğer,1940,0.0526
+122,Aşağıdakilerden hangilerinin lüks olanlarını tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Lüks ürünleri tercih etmiyorum.,8278,0.2243
+123,Kıyafet alışverişi yaparken hangi mağazaları tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Semt pazarı,7844,0.1215
+123,Kıyafet alışverişi yaparken hangi mağazaları tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),Cadde mağazaları,13439,0.2082
+123,Kıyafet alışverişi yaparken hangi mağazaları tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),AVM mağazaları,15077,0.2336
+123,Kıyafet alışverişi yaparken hangi mağazaları tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),"Zincir mağazalar (LCW, DeFacto, Flo vb.)",15344,0.2377
+123,Kıyafet alışverişi yaparken hangi mağazaları tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),"Zincir mağazalar (Zara, Bershka, Koton, Lacoste vb)",11486,0.1779
+123,Kıyafet alışverişi yaparken hangi mağazaları tercih ediyorsun? (Bu soruya birden fazla cevap verebilirsin.),"Lüks marka mağazaları (Chanel, Prada, Burberry, Versace vb)",1363,0.0211
+124,Senin favorin hangi tip fast food mekanları? (Bu soruya birden fazla cevap verebilirsin.),Burger King / Mc Donald’s / KFC gibi mekanlar,20439,0.4826
+124,Senin favorin hangi tip fast food mekanları? (Bu soruya birden fazla cevap verebilirsin.),Big Chef’s / Nusr-et Burger / Burger Joint / Huqqa gibi mekanlar,3339,0.0788
+124,Senin favorin hangi tip fast food mekanları? (Bu soruya birden fazla cevap verebilirsin.),Taksim / Bambi / Marmaris / Kızılkayalar gibi mekanlar,1708,0.0403
+124,Senin favorin hangi tip fast food mekanları? (Bu soruya birden fazla cevap verebilirsin.),Mekan benim için pek fark etmiyor.,9858,0.2328
+124,Senin favorin hangi tip fast food mekanları? (Bu soruya birden fazla cevap verebilirsin.),Fast food benim tarzım değil.,7010,0.1655
+126,Burcun ne tatlım?,Koç,2668,0.0823
+126,Burcun ne tatlım?,Boğa,2595,0.0801
+126,Burcun ne tatlım?,İkizler,2926,0.0903
+126,Burcun ne tatlım?,Yengeç,3023,0.0933
+126,Burcun ne tatlım?,Aslan,3102,0.0957
+126,Burcun ne tatlım?,Başak,2980,0.092
+126,Burcun ne tatlım?,Terazi,2700,0.0833
+126,Burcun ne tatlım?,Akrep,2559,0.079
+126,Burcun ne tatlım?,Yay,2248,0.0694
+126,Burcun ne tatlım?,Oğlak,2567,0.0792
+126,Burcun ne tatlım?,Kova,2502,0.0772
+126,Burcun ne tatlım?,Balık,2533,0.0782

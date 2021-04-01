@@ -10,7 +10,7 @@ import datetime
 from functools import wraps
 
 
-df = pd.read_csv("AnketSonuclari01_20210303.csv")
+df = pd.read_csv("AnketSonuclari01_20210401.csv")
 df["soru_"] = [i.replace(" ", "").replace("?", "").replace(":", "").replace(")", "").replace("(", "").replace(".", "").replace(",", "") for i in df["soru"]]
 
 class DataStore():
