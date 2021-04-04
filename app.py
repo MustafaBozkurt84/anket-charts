@@ -233,12 +233,12 @@ def login():
 def filtered_chart():
     data.token1 = request.args.get('token')
     data.url = "?token=" + data.token1
-    df_question = pd.read_excel(
-        os.path.join(APP_PATH, "Data", "aug_latest.xlsm"),
-        engine='openpyxl',
-    )
-    df_question = pd.read_excel("DataStudy02mail.xlsx", sheet_name="questions")
-    df_answers = pd.read_excel("DataStudy02mail.xlsx", sheet_name="Sheet4")
+
+    df_question = pd.read_excel("DataStudy02mail.xlsx", sheet_name="questions",engine='openpyxl')
+
+    df_answers = pd.read_excel("DataStudy02mail.xlsx", sheet_name="Sheet4",engine='openpyxl')
+
+
     data.my_dict["question_title"] = df_question["title"].tolist()
     data.question1 = request.form.get("one")
     data.question2 = request.form.get("ones")
