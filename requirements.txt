@@ -5,7 +5,7 @@ mysql.connector
 gunicorn
 datetime
 PyJWT==v1.7.1
-xlrd==1.2.0
+openpyxl==1.2.0
 
 
 
