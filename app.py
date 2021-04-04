@@ -239,8 +239,8 @@ def filtered_chart():
     data.question1 = request.form.get("one")
     data.question2 = request.form.get("ones")
     if (data.question1 == None):
-        data.question1 = 'Ailenin aylık ortalama geliri nedir?'
-        data.question2 = 'Pahalı ama çok beğendiğin bir ürün almak istediğinde hangi durum seni en iyi yansıtıyor?'
+        data.question1 = "Senin favori Halley'in hangisi tatlım?"
+        data.question2 = 'Aniden tatlı krizine girsen hangisini tercih edersin tatlım?'
 
     selected_question1 = df_question[df_question["title"] == data.question1]["question_id"].tolist()[0]
     selected_question2 = df_question[df_question["title"] == data.question2]["question_id"].tolist()[0]
@@ -347,7 +347,7 @@ def filtered_chart():
     for i in df_groupbytable.columns:
         my_cross_charts3[i]=df_groupbytable[i].tolist()
 
-    return render_template("dashboard123.html",my_dict=data.my_dict,my_cross_charts3=my_cross_charts3,url=data.url,my_table_list_len=my_table_list_len,df_groupby1=df_groupby1,data_color_dict=data_color_dict,my_cross_charts2=my_cross_charts2,my_cross_charts1=my_cross_charts1,my_table_list=my_table_list)
+    return render_template("detailchart.html",my_dict=data.my_dict,my_cross_charts3=my_cross_charts3,url=data.url,my_table_list_len=my_table_list_len,df_groupby1=df_groupby1,data_color_dict=data_color_dict,my_cross_charts2=my_cross_charts2,my_cross_charts1=my_cross_charts1,my_table_list=my_table_list)
 
 
 if __name__=='__main__':
