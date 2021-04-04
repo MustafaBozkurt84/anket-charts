@@ -270,6 +270,25 @@
                </h3>
               </div>
               <div class="table-responsive">
+                 <form  method="post" id="single_select_form" style="font-size;medium; " >
+              <h3>Select Features</h3>
+                    <h5>X axis</h5>
+                   <select name="ones" class="form-control selectpicker" >
+      {% for column in my_dict["prediction_columns"] %}
+       <option value="{{column}}" style="font-size: medium ;">{{column}}</option>
+        {% endfor %}
+    </select>
+
+                   <br><br><h5>Y axis</h5>
+                    <select name="one" class="form-control selectpicker" >
+      {% for column in my_dict["prediction_output_numeric_columns"] %}
+       <option value="{{column}}" style="font-size: medium ;">{{column}}</option>
+        {% endfor %}
+    </select>
+     <br /><br />
+
+     <input type="submit" name="submit" class="btn btn-info" value="Create Chart" />
+    </form>
                 <div class="table-responsive" >
                   <canvas id= "{{link_ | safe }}" width="200" height="68" ></canvas>
                    <script>

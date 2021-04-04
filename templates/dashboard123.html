@@ -62,12 +62,7 @@
               <span class= "menu" style="cursor:pointer;font-size: small">Dashboard</span>
             </a>
           </li>
-          <li class="active">
-            <a href="/detail_chart{{url}}">
-              <i class="tim-icons icon-chart-pie-36"></i>
-              <span class= "menu" style="cursor:pointer;font-size: small"> Cross Charts </span>
-            </a>
-          </li>
+
 
        {%for i in select_box%}
           <li>
@@ -263,306 +258,222 @@
 
            
           <!--     Sorular Select     ---------------------------------------------------------------------------------------------------------------------------------------------------------->
-            <form action={{url}} method="post" id="multiple_select_form" style="font-size;medium; " >
-              <h3>Anket Seçin </h3>
-     <select name="skills" id="skills" class="form-control selectpicker" style="font-size;medium;margin-top: 0px;" data-live-search="true" multiple >
-        {% for soru in sorular %}
-       <option value="{{soru}}" style="font-size: medium ;">{{soru}}</option>
-        {% endfor %}
+            </div>
 
-     </select>
+        <form  method="post" id="single_select_form" style="font-size;medium; " >
+              <h3>Select Features</h3>
+                    <h5>X axis</h5>
+                   <select name="ones" class="form-control selectpicker" >
+      {% for column in my_dict["question_title"] %}
+       <option value="{{column}}" style="font-size: medium ;">{{column}}</option>
+        {% endfor %}
+    </select>
+
+                   <br><br><h5>Y axis</h5>
+                    <select name="one" class="form-control selectpicker" >
+      {% for column in my_dict["question_title"] %}
+       <option value="{{column}}" style="font-size: medium ;">{{column}}</option>
+        {% endfor %}
+    </select>
      <br /><br />
-     <input type="hidden" name="hidden_skills" id="hidden_skills" />
-     <input type="submit" name="submit" class="btn btn-info" value="Grafik Oluştur" />
-    </form></div>
+
+     <input type="submit" name="submit" class="btn btn-info" value="Create Chart" />
+    </form>
+        <div class="card card-chart table-responsive" >
+
+              <div class="card-header">
+                <h3 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-success"></i>  Analiz Sorusu : {{my_dict["question1"]}}</h3>
+                <h3 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-success"></i>  Kırılım Sorusu : {{my_dict["question2"]}}</h3>
+                <h3 class="card-title"><i class="tim-icons icon-single-02 text-primary"></i>"{{my_dict["question2"]}}" sorusu ile çapraz analizi yapılmıştır. </h3>
+                <h4 style="text-align:center; color:rgba(212, 122, 166, 1) ">"{{my_dict["question2"]}}"</h4>
+              </div>
+              <div class="table-responsive">
+
+                <div class="table-responsive" >
+                  <canvas id= "mychart11" width="200" height="68" ></canvas>
+                    <script>
+var ctx = document.getElementById("mychart11").getContext('2d');
+var myChart4 = new Chart(ctx, {
+    type: "bar",
+
+    data: {
+        labels: {{my_dict["df_groupby1_index"] | safe}},
+
+
+    datasets: [
+    {%for i in range(data_color_dict["col_lenn"])%}
+        {
+            label: "{{data_color_dict["col_name"][i]|safe}}",
+
+            data:  {{ data_color_dict["column"][i] |safe}},
+            backgroundColor:"{{ data_color_dict["color"][i] |safe}}" ,
+            borderColor: "{{ data_color_dict["color1"][i] |safe}}",
+            borderWidth: 1
+        },
+        {% endfor %}
+       ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script><h4 style="text-align:center; color:rgba(212, 122, 166, 1) ">"{{my_dict["question1"]}}"</h4>
+                </div>
+              </div>
+
+            </div>
         <div class="row">
-          <div class="col-12">
+          <div class="col-lg-4">
+
+
+
             <div class="card card-chart">
+
+              <div class="card-header">
+                <h4 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-success"></i>{{my_dict["question1"] | safe}}
+               </h4>
+                <h3 class="card-title"><i class="tim-icons icon-single-02 text-primary"></i> Ankete Katılan Sayı : {{my_cross_charts1["count_first_chart"]}}
+
+               </h3>
+              </div>
               <div class="card-body">
-                <div class="table-responsive"> <h4 style="color:rgba(255, 99, 132, 1);">Gösterilen Anketler</h4>
+                <div class="chart-area">
+                  <canvas id= "mychart1" width="150" height="68"></canvas>
+                    <script>
+var ctx = document.getElementById("mychart1").getContext('2d');
+var myChart4 = new Chart(ctx, {
+    type: "bar",
+
+    data: {
+        labels: ["{{my_dict["question1"] | safe}}"],
+
+
+    datasets: [
+    {%for i in range(my_cross_charts1["num1"])%}
+        {
+            label: "{{my_cross_charts1["columns1"][i]|safe}}",
+
+            data:  {{ my_cross_charts1["data1"][i] |safe}},
+            backgroundColor:"{{ data_color_dict["color"][i] |safe}}" ,
+            borderColor: "{{ data_color_dict["color1"][i] |safe}}",
+            borderWidth: 1
+        },
+        {% endfor %}
+       ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h4 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-primary"></i> {{my_dict["question2"] | safe}}</h4>
+                <h3 class="card-title"><i class="tim-icons icon-single-02 text-info"></i>Ankete Katılan Sayı : {{my_cross_charts2["count_second_chart"]}}
+               </h3>
+              </div>
+              <div class="card-body">
+                <div class="chart-area">
+                  <canvas id= "myChart4" width="150" height="68"></canvas>
+                  <script>
+var ctx = document.getElementById("myChart4" ).getContext('2d');
+var myChart4 = new Chart(ctx, {
+    type: "bar",
+
+    data: {
+        labels: ["{{my_dict["question2"] | safe}}"],
+
+
+    datasets: [
+    {%for i in range(my_cross_charts2["num1"])%}
+        {
+            label: "{{my_cross_charts2["columns1"][i]|safe}}",
+
+            data:  {{ my_cross_charts2["data2"][i] |safe}},
+            backgroundColor:"{{ data_color_dict["color"][i] |safe}}" ,
+            borderColor: "{{ data_color_dict["color1"][i] |safe}}",
+            borderWidth: 1
+        },
+        {% endfor %}
+       ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+
+                <h3 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-success"></i>  Analiz Sorusu : {{my_dict["question1"]}}</h3>
+                <h3 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-success"></i>  Kırılım Sorusu : {{my_dict["question2"]}}</h3>
+                <h3 class="card-title"><i class="tim-icons icon-single-02 text-primary"></i>"{{my_dict["question2"]}}" sorusu ile çapraz analizi yapılmıştır. </h3>
+
+              </div>
+              <div class="card-body">
+                <div class="chart-area">
                   <table class="table tablesorter " id="">
                     <thead class=" text-primary">
                       <tr>
-                        <th>Anket Sorusu</th>
-                        <th>Ankete Katılan Kişi Sayısı</th>
-                        <th>Cevaplar </th>
-                        <th>Oran</th>
-
+                        {%for i in my_cross_charts2["tablecolumns"]%}
+                        <th>{{i}}</th>
+                        {% endfor %}
                       </tr>
                         </th>
                       </tr>
                     </thead>
                     <tbody>
+                     {% for i in range(my_cross_charts2["tableindexlen"]) %}
 
+                                  <tr>
+                                    {% for col in my_cross_charts2["tablecolumns"] %}
+                                  <td>{{my_cross_charts3[col][i]}} </td>
+                                    {% endfor %}
+                                  </tr>
 
-
-                        {% for i in range(0,num) %}
-                        <tr>
-                        <td>{{my_dict["soru"][i]}} </td>
-                        <td>{{my_dict["AnketeKatılanSayı"][i]}}</td>
-                        <td>{{my_dict["label"][i]}}</td>
-                        <td>{{my_dict["CevapYuzdesi"][i]}}</td>
-                          </tr>
-
-
-                        {% endfor %}
-
+                     {% endfor %}
 
 
                     </tbody>
                   </table>
                 </div>
               </div>
-            </div></div>
-        </div>
-        
-        {% for i in range(0,num,3) %}
-        <div class="row">
-          <div class="col-lg-4">
-
-
-
-            <div class="card card-chart">
-
-              <div class="card-header">
-                <h4 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-success"></i>  {{my_dict["soru"][i]  | safe}}
-               </h4>
-                <h3 class="card-title"><i class="tim-icons icon-single-02 text-primary"></i> Ankete Katılan Sayı
-              {{my_dict["AnketeKatılanSayı"][i]  | safe}}
-               </h3>
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id= "{{i}}" width="150" height="68"></canvas>
-                   <script>
-var ctx = document.getElementById("{{i}}").getContext('2d');
-var myChart4 = new Chart(ctx, {
-    type: "{{my_dict["chart_type"][i]  | safe}}",
-    data: {
-        labels: {{my_dict["label"][i]  | safe}}
-
-              ,
-        datasets: [{
-            label: {{my_dict["label"][i]  | safe}},
-            data: {{my_dict["CevapYuzdesi"][i]  | safe}}
-              ,
-            backgroundColor: [
-                 'rgba(255, 99, 132, 0.4)',
-                'rgba(54, 162, 235, 0.4)',
-                'rgba(255, 206, 86, 0.4)',
-                'rgba(75, 192, 192, 0.4)',
-                'rgba(153, 102, 255, 0.4)',
-                'rgba(255, 159, 64, 0.4)',
-                "rgba(211, 36, 167, 0.4)",
-                "rgba(183, 2, 63, 0.4)",
-                " rgba(51, 171, 87, 0.4)",
-                "rgba(100, 160, 168, 0.4)",
-                "rgba(16, 150, 166, 0.4)",
-                "rgba(183, 100, 83, 4)",
-                "rgba(193, 18, 35, 4)",
-                "rgba(81, 24, 172, 0.4)",
-                "rgba(212, 122, 166, 0.4)"
-
-            ],
-            borderColor: [
-                 'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                "rgba(211, 36, 167, 1)",
-                "rgba(183, 2, 63, 1)",
-                " rgba(51, 171, 87, 1)",
-                "rgba(100, 160, 168, 1)",
-                "rgba(16, 150, 166, 1)",
-                "rgba(183, 100, 83, 1)",
-                "rgba(193, 18, 35, 1)",
-                "rgba(81, 24, 172, 1)",
-                "rgba(212, 122, 166, 1)"
-
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h4 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-primary"></i> {{my_dict["soru"][i+1]  | safe}} </h4>
-                <h3 class="card-title"><i class="tim-icons icon-single-02 text-info"></i>Ankete Katılan Sayı
-              {{my_dict["AnketeKatılanSayı"][i+1]  | safe}} </h3>
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id= "{{i+1}}" width="150" height="68"></canvas>
-                   <script>
-var ctx = document.getElementById("{{i+1}}").getContext('2d');
-var myChart4 = new Chart(ctx, {
-    type: "{{my_dict["chart_type"][i+1]  | safe}}",
-    data: {
-        labels: {{my_dict["label"][i+1]  | safe}}
-
-              ,
-        datasets: [{
-            label: {{my_dict["label"][i+1]  | safe}},
-            data: {{my_dict["CevapYuzdesi"][i+1]  | safe}}
-              ,
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.4)',
-                'rgba(54, 162, 235, 0.4)',
-                'rgba(255, 206, 86, 0.4)',
-                'rgba(75, 192, 192, 0.4)',
-                'rgba(153, 102, 255, 0.4)',
-                'rgba(255, 159, 64, 0.4)',
-                "rgba(211, 36, 167, 0.4)",
-                "rgba(183, 2, 63, 0.4)",
-                " rgba(51, 171, 87, 0.4)",
-                "rgba(100, 160, 168, 0.4)",
-                "rgba(16, 150, 166, 0.4)",
-                "rgba(183, 100, 83, 4)",
-                "rgba(193, 18, 35, 4)",
-                "rgba(81, 24, 172, 0.4)",
-                "rgba(212, 122, 166, 0.4)"
-
-
-
-
-
-
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                "rgba(211, 36, 167, 1)",
-                "rgba(183, 2, 63, 1)",
-                " rgba(51, 171, 87, 1)",
-                "rgba(100, 160, 168, 1)",
-                "rgba(16, 150, 166, 1)",
-                "rgba(183, 100, 83, 1)",
-                "rgba(193, 18, 35, 1)",
-                "rgba(81, 24, 172, 1)",
-                "rgba(212, 122, 166, 1)"
-
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h4 style="color:rgba(255, 99, 132, 1);"><i class="tim-icons icon-zoom-split text-info"></i> {{my_dict["soru"][i+2]  | safe}}</h4>
-                <h3 class="card-title"><i class="tim-icons icon-single-02 text-success"></i> Ankete Katılan Sayı
-              {{my_dict["AnketeKatılanSayı"][i+2]}}</h3>
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id= "{{i+2}}" width="150" height="68"></canvas>
-                   <script>
-var ctx = document.getElementById("{{i+2}}").getContext('2d');
-var myChart4 = new Chart(ctx, {
-    type: "{{my_dict["chart_type"][i+2]  | safe}}",
-    data: {
-        labels: {{my_dict["label"][i+2]  | safe}}
-
-              ,
-        datasets: [{
-            label: {{my_dict["label"][i+2]  | safe}},
-            data: {{my_dict["CevapYuzdesi"][i+2]  | safe}}
-              ,
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.4)',
-                'rgba(54, 162, 235, 0.4)',
-                'rgba(255, 206, 86, 0.4)',
-                'rgba(75, 192, 192, 0.4)',
-                'rgba(153, 102, 255, 0.4)',
-                'rgba(255, 159, 64, 0.4)',
-                "rgba(211, 36, 167, 0.4)",
-                "rgba(183, 2, 63, 0.4)",
-                " rgba(51, 171, 87, 0.4)",
-                "rgba(100, 160, 168, 0.4)",
-                "rgba(16, 150, 166, 0.4)",
-                "rgba(183, 100, 83, 4)",
-                "rgba(193, 18, 35, 4)",
-                "rgba(81, 24, 172, 0.4)",
-                "rgba(212, 122, 166, 0.4)"
-
-            ],
-            borderColor: [
-                 'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                "rgba(211, 36, 167, 1)",
-                "rgba(183, 2, 63, 1)",
-                " rgba(51, 171, 87, 1)",
-                "rgba(100, 160, 168, 1)",
-                "rgba(16, 150, 166, 1)",
-                "rgba(183, 100, 83, 1)",
-                "rgba(193, 18, 35, 1)",
-                "rgba(81, 24, 172, 1)",
-                "rgba(212, 122, 166, 1)"
-
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-        {% endfor %}
+
 
 
 
