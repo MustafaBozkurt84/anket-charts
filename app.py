@@ -350,6 +350,8 @@ def filtered_chart():
     my_table_list_len=len(my_table_list)
     for i in df_groupbytable.columns:
         my_cross_charts3[i]=df_groupbytable[i].tolist()
+    data.token1 = request.args.get('token')
+    data.url = ".?token=" + data.token1
 
     return render_template("detailchart.html",my_dict=data.my_dict,my_cross_charts3=my_cross_charts3,url=data.url,my_table_list_len=my_table_list_len,df_groupby1=df_groupby1,data_color_dict=data_color_dict,my_cross_charts2=my_cross_charts2,my_cross_charts1=my_cross_charts1,my_table_list=my_table_list)
 
