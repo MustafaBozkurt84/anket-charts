@@ -267,14 +267,14 @@
 
         <form  method="post" id="single_select_form" style="font-size;medium; " >
               <h3>Select Features</h3>
-                    <h5>X axis</h5>
+                    <h5>Analiz Sorusu</h5>
                    <select name="ones" class="form-control selectpicker" >
       {% for column in my_dict["question_title"] %}
        <option value="{{column}}" style="font-size: medium ;">{{column}}</option>
         {% endfor %}
     </select>
 
-                   <br><br><h5>Y axis</h5>
+                   <br><br><h5>Çaprazlama Sorusu</h5>
                     <select name="one" class="form-control selectpicker" >
       {% for column in my_dict["question_title"] %}
        <option value="{{column}}" style="font-size: medium ;">{{column}}</option>

@@ -240,8 +240,8 @@ def filtered_chart():
 
 
     data.my_dict["question_title"] = df_question["title"].tolist()
-    data.question1 = request.form.get("one")
-    data.question2 = request.form.get("ones")
+    data.question1 = request.form.get("ones")
+    data.question2 = request.form.get("one")
     if (data.question1 == None):
         data.question1 = "Senin favori Halley'in hangisi tatlım?"
         data.question2 = 'Aniden tatlı krizine girsen hangisini tercih edersin tatlım?'
